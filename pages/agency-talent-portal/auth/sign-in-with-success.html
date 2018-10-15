@@ -22,25 +22,7 @@ title: Sign in
   </button>
 </div>
 
-<main class="usajobs-content-well usajobs-auth__content-well" id="main-content" role="main" aria-label="Forgot password">
-  <h1>Sign in</h1>
-  <form class="usajobs-form usajobs-form--narrow" action="#sign-in" method="post" novalidate="novalidate">
-    <fieldset class="usajobs-fieldset">
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" value="">
-
-      <label for="password">Password</label>
-      <input required="required" aria-required="true" type="password" name="password" id="password" aria-describedby="password-validation-list">
-      <div class="usajobs-button_bar--slim-left">
-        <div class="usajobs-button_bar__body">
-          <a href="{{ site.baseurl }}/agency-talent-portal/auth/sign-in-with-success/" class="usa-button usa-button-primary usajobs-button_bar__save">
-            Sign in
-          </a>
-        </div>
-      </div>
-    </fieldset>
-  </form>
-</main>
+{% include_relative /_sign-in-usajobs-form.html %}
 
 <!-- aside class="usajobs-rightrail usajobs-auth__terms">
   {% include components/auth/login-terms.html %}
