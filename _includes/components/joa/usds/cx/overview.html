@@ -1,0 +1,145 @@
+<div class="usajobs-joa-overview--pilot">
+  <h3 id="overview" class="usajobs-joa-overview__header usajobs-joa-overview--pilot__header">Overview</h3>
+  <ul class="usajobs-joa-summary__list usajobs-joa-summary--pilot__list">
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="The open date is when the job was posted and the closing date is when the job will close.">
+          Open &amp; closing dates
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        <i class="fa fa-clock-o usajobs-joa-summary__closing-clock--is-warning"></i>
+        <span itemprop="datePosted">{{ job.PublicationStartDate }}</span> to <span itemprop="validThrough">{{ job.ApplicationCloseDate }}</span>
+      </p>
+      {% if job.ApplicationClosingType == 'application-cut-off' %}
+      <div class="usajobs-joa-closing-types usajobs-joa-closing-types--cut-off">
+        This job will close when we have received <strong>{{ job.ApplicationCutOff }} applications</strong> which may be sooner than the closing date. <a href="http://usajobs.github.io/Help/how-to/job-announcement/closing-types/#applicant-cut-off"
+          target="_blank">Learn more</a>
+      </div>
+      {% endif %}
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="The salary range for the job.">
+          Salary
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__salary">
+        <span itemprop="baseSalary">${{ job.PositionRemuneration.first.MinimumRange }}</span> -
+        ${{ job.PositionRemuneration.first.MaximumRange}} {{job.PositionRemuneration.first.RateIntervalCode }}
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="A grade refers to the pay scale which sets the pay level and qualifications for the job.">
+          Pay scale &amp; grade
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__grades">
+        {{ job.JobGrade.first.Code }}
+        {% if job.UserArea.Details.LowGrade == job.UserArea.Details.HighGrade %}
+        {{ job.UserArea.Details.LowGrade }}
+        {% else %}
+        {{ job.UserArea.Details.LowGrade }} - {{ job.UserArea.Details.HighGrade }}
+        {% endif %}
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="The way that the Federal Government classifies the duration of certain jobs.">
+          Appointment type
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        {{ job.PositionOfferingType.first.Name }}
+        {% if job.PositionOfferingType.first.OverrideText %}
+        - {{ job.PositionOfferingType.first.OverrideText }}
+        {% endif %}
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="Determines the number of hours that you will work during the week.">
+          Work schedule
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value" itemprop="employmentType">
+        {{ job.PositionSchedule.first.Name }}
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="The Federal Government's numbered system for grouping similar occupations.">
+          Series
+        </span>
+      </h5>
+      {% for series in job.JobCategory %}
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        <a href="https://www.usajobs.gov/Search/?j={{ series.Code }}">
+          {{ series.Code  }} {{ series.Name }}
+        </a>
+      </p>
+      {% endfor %}
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="The Federal Government has three services that determine how you are hired: Competitive, Excepted, and Senior Executive.">
+          Service
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        {% if job.UserArea.Details.ServiceType == "01" %}
+        Competitive
+        {% elsif job.UserArea.Details.ServiceType == "02" %}
+        Excepted
+        {% endif %}
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="Determines if you will be a supervisor.">
+          Promotion potential
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        {{ job.PromotionPotential }}
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="Determines if you will be a supervisor.">
+          Supervisory status
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        {% if job.SupervisoryStatus %}
+        Yes
+        {% else %}
+        No
+        {% endif %}
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="The level of security clearance required to hold this position.">
+          Security clearance
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        <a href="https://usajobs.github.io/Help/faq/job-announcement/security-clearances/" target="_blank">
+          {{ job.UserArea.Details.GOVT_SecurityClearanceRequired }}
+        </a>
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="Whether or not you will be tested for illegal drug use.">
+          Drug test
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        {{ job.UserArea.Details.GOVT_DrugTestRequired }}
+      </p>
+    </li>
+  </ul>
+</div>

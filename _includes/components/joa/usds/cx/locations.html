@@ -1,0 +1,104 @@
+<div id="locations" class="usajobs-joa-locations usajobs-joa-locations--pilot">
+  <h3 class="usajobs-joa-locations--v1-5__header usajobs-joa-locations--pilot__header">Locations</h3>
+  <ul class="usajobs-joa-locations__list usajobs-joa-locations--pilot__list">
+    {% for position in job.PositionLocation limit: 4 %}
+    <li class="usajobs-joa-locations__item usajobs-joa-locations--pilot__item">
+      <a class="usajobs-joa-locations__link" href="#map" itemtype="http://schema.org/PostalAddress">
+        <div class="usajobs-joa-locations__figure">
+          <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="usajobs-joa-locations__body">
+          <span class="usajobs-joa-locations__street" itemprop="streetAddress">
+            {{ position.AddressLine }}
+          </span>
+          <span class="usajobs-joa-locations__city" itemprop="addressLocality">
+            {{ position.LocationName }}
+          </span>
+          <span class="usajobs-joa-locations__vacancies">
+            {% if position.Vacancies == '1' %}
+            1 vacancy
+            {% else %}
+            {{ position.Vacancies }} vacancies
+            {% endif %}
+          </span>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% if job.PositionLocation.size > 4 %}
+  {% assign more_count = job.PositionLocation.size | minus: 4 %}
+  <div data-object="reveal">
+    <a class="usajobs-joa-locations__reveal-link usajobs-show-more__trigger" aria-expanded="false" aria-controls="more-locations" data-behavior="reveal.show-toggle" href="#more-locations">
+      Show <span data-toggle-text="less">more</span> locations ({{ more_count }})
+    </a>
+    <div id="more-locations" aria-hidden="true" class="usajobs-joa-locations__more-locations">
+      <ul class="usajobs-joa-locations__list">
+        {% for position in job.PositionLocation offset: 4 %}
+        <li class="usajobs-joa-locations__item">
+          <a class="usajobs-joa-locations__link" href="#map" itemtype="http://schema.org/PostalAddress">
+            <div class="usajobs-joa-locations__figure">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="usajobs-joa-locations__body">
+              <span class="usajobs-joa-locations__street" itemprop="streetAddress">
+                {{ position.AddressLine }}
+              </span>
+              <span class="usajobs-joa-locations__city" itemprop="addressLocality">
+                {{ position.LocationName }}
+              </span>
+              <span class="usajobs-joa-locations__vacancies">
+                {% if position.Vacancies == '1' %}
+                1 vacancy
+                {% else %}
+                {{ position.Vacancies }} vacancies
+                {% endif %}
+              </span>
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  {% endif %}
+  {% if job.PositionLocationWithinArea %}
+  <div id="commuting-distance">
+    <!-- Handle new SIF values PositionLocationWithinArea and PositionLocationWithinArea -->
+    <p class="usajobs-joa-locations--v1-5__commuting-distance">
+      <span class="fa fa-info-circle"></span> To apply for this job, you must live within a {{ job.PositionLocationRadius }} mile radius of one of these locations.
+    </p>
+  </div>
+  {% endif %}
+  <div class="usajobs-joa-sub-section usajobs-joa-sub-section--pilot">
+    <div id="relocationauthorized" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--pilot__container">
+      <h5 class="usajobs-joa-sub-section__small-title">
+        <span rel="tooltip" title="Whether or not you will be reimbursed for relocation expenses.">
+          Relocation paid
+        </span>
+      </h5>
+      <p class="usajobs-joa-sub-section__text">
+        {% if job.UserArea.Details.Relocation %}
+        Yes
+        {% else %}
+        No
+        {% endif %}
+      </p>
+    </div>
+
+    <div id="telework-eligble" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--pilot__container">
+      <h5 class="usajobs-joa-sub-section__small-title">
+        <span rel="tooltip" title="Determines if you will be able to work from home on some days.">
+          Telework eligible
+        </span>
+      </h5>
+      <p class="usajobs-joa-sub-section__text">
+        {% if job.UserArea.Details.Telework %}
+        Yes as determined by agency policy
+        {% else %}
+        No
+        {% endif %}
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+<div id="where-you-will-work" class="usajobs-joa-section usajobs-joa-section--pilot">
+  <h2 class="usajobs-joa-section--pilot__header">Who you'll work with</h2>
+  <p>
+    {{ job.AgencyMarketingStatement }}
+  </p>
+  <ul class="usa-accordion-bordered">
+    <li>
+      <button class="usa-accordion-button" aria-expanded="false" aria-controls="benefits">
+        Benefits
+      </button>
+      <div id="benefits" itemprop="jobBenefits" class="usa-accordion-content">
+        <p>
+          As a new or existing federal employee, you and your family may have access to a range of benefits. Your benefits depend on the type of position you have - whether you’re a permanent, part-time, temporary or an intermittent employee. You
+          may be eligible for the following benefits, however, check with your agency to make sure you’re eligible under their policies.
+        </p>
+        <ul>
+          <li>
+            <a href="https://www.usajobs.gov/Help/working-in-government/benefits/" target="_blank">
+              Learn more about federal benefits
+            </a>
+          </li>
+          <li>
+            <a href="{{ job.UserArea.Details.BenefitsURL }}" target="_blank">
+              Learn more about benefits at the {{ job.OrganizationName }}
+            </a>
+          </li>
+        </ul>
+    </li>
+    <li>
+      <button class="usa-accordion-button" aria-expanded="false" aria-controls="contact-agency">
+        Contact the agency
+      </button>
+      <div id="contact-agency" class="usa-accordion-content">
+        <div class="usajobs-joa-agency--pilot">
+          <h3 class="usajobs-joa-agency--pilot__contact-name">
+            {{ job.PostingRequestor.PersonContact.FormattedName }}
+          </h3>
+          <div>
+            <div class="usajobs-joa-sub-section__container">
+              <h5 class="usajobs-sub-section__small-title">Phone</h5>
+              <p class="usajobs-joa-sub-section__text">
+                <a href="tel://{{ job.PostingRequestor.PersonContact.DialNumber }}">
+                  {{ job.PostingRequestor.PersonContact.DialNumber }}
+                </a>
+              </p>
+              <h5 class="usajobs-sub-section__small-title">Email</h5>
+              <p class="usajobs-joa-sub-section__text">
+                <a href="mailto:{{ job.PostingRequestor.PersonContact.Email }}">
+                  {{ job.PostingRequestor.PersonContact.Email }}
+                </a>
+              </p>
+            </div>
+            <div class="usajobs-joa-sub-section__container">
+              <h5 class="usajobs-sub-section__small-title">Address</h5>
+              <p class="usajobs-joa-sub-section__text">
+                <address>
+                  {{ job.PostingRequestor.ExternalContact.OrgName }}<br>
+                  {{ job.PostingRequestor.ExternalContact.Address.Street1 }}<br>
+                  {{ job.PostingRequestor.ExternalContact.Address.City}},
+                  {{ job.PostingRequestor.ExternalContact.Address.State }}<br>
+                  {{ job.PostingRequestor.ExternalContact.Address.PostalCode}}<br>
+                  {{ job.PostingRequestor.ExternalContact.Address.CountryCode}}
+                </address>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

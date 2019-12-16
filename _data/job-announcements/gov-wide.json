@@ -1,0 +1,137 @@
+{
+  "PositionID": "NPS-12345678910-DE-OPM",
+  "PositionTitle": "Customer Experience Strategist",
+  "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/123456789",
+  "ApplyURI": ["https://www.usajobs.gov:443/GetJob/ViewDetails/123456789?PostingChannelID=RESTAPI"],
+  "PositionLocationDisplay": "Washington, DC",
+  "PositionLocation": [
+    {
+      "LocationName": "Washington, DC",
+      "CountryCode": "United States",
+      "CountrySubDivisionCode": "District of Columbia",
+      "CityName": "Washington, DC",
+      "Longitude": -94.9212,
+      "Latitude": 39.3293,
+      "AddressLine": "",
+      "Vacancies": "Many"
+    },
+    {
+      "LocationName": "Baltimore, MD",
+      "CountryCode": "United States",
+      "CountrySubDivisionCode": "Maryland",
+      "CityName": "Baltimore",
+      "Longitude": -93.0869845300913,
+      "Latitude": 31.7609549313784,
+      "AddressLine": "",
+      "Vacancies": "Many"
+    }
+  ],
+  "PositionLocationWithinArea": false,
+  "ApplicationClosingType": "application-cut-off",
+  "ApplicationCutOff": "150",
+  "OrganizationName": "Office of Personnel Management",
+  "AgencyMarketingStatement": "<p>From small businesses seeking loans to families receiving disaster support, every interaction between the Federal government and the public is an opportunity to demonstrate the government is working to meet their needs. To truly transform the way the public experiences government, we need to approach rebuilding trust transaction by transaction internally and externally, interaction by interaction across the life events people experience. And we need you to help us do it.</p><p>We're working with 25 of the nation's highest impact public-facing programs at <a href=\"https://www.performance.gov/cx/HISPList.pdf\" target=\"_blank\">14 federal agency headquarters</a> in Washington, DC and Baltimore, MD to implement a more systematic, government-wide approach towards elevating the importance of a human-centered methods and increasing the public’s trust and satisfaction with our Federal institutions.</p><p>Candidates may be considered for other roles even if you do not formally submit an application for the other roles we are seeking to fill under the Customer Experience Strategist position i.e., if you apply as a Customer Experience Strategist but we see potential for a Design Strategist, we will consider you for that position based on our own assessment.</p><p>Qualified applicants will remain available for selection for one year after the lists are created.</p>",
+  "AgencyMarketingURL": "https://design.usajobs.gov/",
+  "OrganizationURL": "https://design.usajobs.gov/",
+  "DepartmentName": "Other Agencies and Independent Organizations",
+  "JobCategory": [
+    {
+      "Name": "Miscellaneous Administration and Program",
+      "Code": "0301"
+    }
+  ],
+  "JobOccupation": [
+    {
+      "Name": "Managers, Marketing",
+      "Code": "Managers%2C+Marketing",
+      "Count": "1"
+    }
+  ],
+  "JobGrade": [
+    {
+      "Code": "GS"
+    }
+  ],
+  "PositionSchedule": [
+    {
+      "Name": "Full Time",
+      "Code": "1"
+    }
+  ],
+  "PositionOfferingType": [
+    {
+      "Name": "Permanent",
+      "Code": ""
+    }
+  ],
+  "QualificationSummary": "Subject matter experts will evaluate the first three pages of your resume and your design portfolio based on these competencies. You must show 52 weeks full time experience in all competencies listed below in order to qualify. Please make sure your resume reflects this time required.",
+  "PositionRemuneration": [
+    {
+      "MinimumRange": "76,687",
+      "MaximumRange": "138,572",
+      "RateIntervalCode": "per year"
+    }
+  ],
+  "SupervisoryStatus": false,
+  "PromotionPotential": "None",
+  "PositionStartDate": "2020-02-03",
+  "PositionEndDate": "2020-02-07",
+  "PublicationStartDate": "02/03/20",
+  "ApplicationCloseDate": "02/07/20",
+  "UserArea": {
+    "Details": {
+      "MajorDutiesList": [
+        "Build agency understanding of who their customers are and the value they seek from Federal services, and what aspects of customer experience are most important to them when.",
+        "Creatively gather and package compelling customer experience data to support leadership decision-making.",
+        "Bring together the right people and supporting culture to develop strategies for improving CX, and plan for achieving measurable outcomes.",
+        "Act as a relentless entrepreneur driving opportunities and projects through to completion creatively within a bureaucracy, while maintaining respect for colleagues and tactfully building coalitions of support.",
+        "Work alongside colleagues to embed human-centered design practices so that others can both benefit from these approaches and learn methods for sustainable change."
+      ],
+      "KeyRequirements": [
+        "<strong>Adaptive Leadership and Resiliency:</strong> The ideal candidate leads with an entrepreneurial spirt and emotional intelligence. Demonstrated, for example, in finding an effective direction given organizational constraints, friction, and bureaucracy. The candidate will lead by example, form coalitions, and manage stakeholders. These leadership skills include communication, relationship management, diplomacy, flexibility, optimism, resilience, mission-orientation, humility, and team orientation.",
+        "<strong>Customer Experience Strategist:</strong> The ideal candidate has experience aligning customer experience strategy to the organization’s mission, vision and strategic priorities. Following, the candidate can demonstrate how that strategy was enacted through, for example, developing and launching a new product or initiative, and standing up a new practice area, each carried through to a desired result. In this practice, the candidate will show how progress and outcomes are measured against direct customer input. Understands core functional areas of how strategy components (governance, measurement, people, technology, service design, and process) fit together. Can clearly articulate a vision to demonstrate impact.",
+        "<strong>Managing Customer Experience Implementation:</strong> Implement CX initiatives that follow the customer’s journey across organizational silos. Use information collected, combined with operational data, to drive decision-making, demonstrate mission effectiveness, and support continuous improvement. Experience working in a context where priorities can be ambiguous and /or change rapidly. Can clearly communicate to all stakeholders and produce key reports.",
+        "<strong>Human Centered Design Practices:</strong> Experience using applied design in service of positive customer outcomes, which could include design thinking, service design, content design, product design, behavioral science, ethnographic research, usability research, or accessibility assessments (including 508 standards). Has the ability to successfully communicate the impact of good design to stakeholders and leadership with a variety of professional backgrounds."
+      ],
+      "ServiceType": "01",
+      "HowToApply": "",
+      "WhatToExpectNext": "",
+      "RequiredDocuments": "",
+      "Benefits": "",
+      "BenefitsURL": "https://www.usa.gov/benefits-for-federal-employees",
+      "OtherInformation": "<p>Competitive applicants for GS 13 positions often have at least:</p><ul><li>5 years of experience</li><li>A bachelor's degree</li></ul>",
+      "ConditionsOfEmployment": [
+        "Successfully complete a background investigation.",
+        "Go through a Personal Identity Verification (PIV) process that requires two forms of identification from the <a href=\"https://www.uscis.gov/sites/default/files/files/form/i-9.pdf\" target=\"_blank\">Form I-9</a>. Federal law requires we verify the identity and employment eligibility of all new hires in the U.S.",
+        "File a Confidential Financial Disclosure Report within 30 days of being hired and once a year from then on.",
+        "Obtain and use a government-issued charge card for business-related travel."
+      ],
+      "JobSummary": "We're inviting customer experience leaders to join us across government in improving the way we serve the public. You must have dedication to mission, ability to continually re-center on the customers we serve, willingness to go deep into projects and then zoom out to persuade leadership on the value of this work using data, user research and customer insights. Read about these <a href=\"https:/www.performance.gov/CAP/cx\" target=\"_blank\">efforts</a> and <a href=\"https://www.performance.gov/cx/HISPList.pdf\" target=\"_blank\">programs</a>. It’s wonky, but the Office of Management and Budget has issued <a href=\"https:/www.performance.gov/cx/a11-280.pdf\">first-of-its-kind guidance on Customer Experience</a>.",
+      "LowGrade": "13",
+      "HighGrade": "15",
+      "Relocation": false,
+      "Telework": true,
+      "HiringPath": ["public"],
+      "GOVT_BackgroundCheck": "Public Trust",
+      "GOVT_SecurityClearanceRequired": "None",
+      "GOVT_DrugTestRequired": "No"
+    }
+  },
+  "PostingRequestor": {
+    "PersonContact": {
+      "FormattedName": "Christina Hoffman",
+      "DialNumber": "202-905-9063",
+      "Email": "Christina.Hoffman@opm.gov"
+    },
+    "ExternalContact": {
+      "OrgName": "Office of Personnel Management",
+      "Address": {
+        "Street1": "1900 E Street NW",
+        "City": "Washington",
+        "State": "DC",
+        "PostalCode": "20415",
+        "CountryCode": "US"
+      }
+    }
+  }
+}

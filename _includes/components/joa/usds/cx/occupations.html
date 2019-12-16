@@ -1,0 +1,11 @@
+<div class="usajobs-joa-occupations">
+  <h3 class="usajobs-joa-occupations__title">Similar Jobs</h3>
+  <h4 class="usajobs-joa-occupations__title">Job family (Series)</h4>
+  {% for series in job.JobCategory %}
+  <p class="usajobs-joa-summary__series">
+    <a href="https://test.usajobs.gov/Search/?j={{ series.Code }}" class="usajobs-joa-occupations__series">
+      {{ series.Code  }} {{ series.Name }}
+    </a>
+  </p>
+  {% endfor %}
+</div>

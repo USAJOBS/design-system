@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Title and meta description
+================================================== -->
+ <title>USAJOBS Design System | Gov-wide CX hiring action</title>
+<meta property="og:title" content="USAJOBS Design System | Gov-wide CX hiring action" />
+ 
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+
+
+<link rel="canonical" href="/job-announcement/v7.0/cx/" />
+
+<!-- Favicons
+================================================== -->
+<!-- 128x128 -->
+<link rel="shortcut icon" type="image/ico" href="/img/favicons/favicon.ico" />
+<link rel="icon" type="image/png" href="/img/favicons/favicon.png" />
+
+<!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+<link rel="icon" type="image/png" sizes="192x192" href="/img/favicons/favicon-192.png" />
+
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/img/favicons/favicon-57.png" />
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicons/favicon-72.png" />
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicons/favicon-114.png" />
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicons/favicon-144.png" />
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="/css/usajobs-design-system-all.css">
+<!-- For production we should compile a distinct CSS for each component -->
+<link rel="stylesheet" href="/css/usajobs-design-system-components.css">
+  <link rel="stylesheet" href="/css/usajobs-design-system-joa.css">
+  <link rel="stylesheet" href="/css/usajobs-design-system-joa-pilot.css">
+</head>
+
+<body class="gov-wide-cx-hiring-action usajobs-joa">
+  
+<header class="usajobs-site-header" role="banner" aria-label="header">
+  <!-- Gov banner BEGIN -->
+<div class="usa-banner">
+  <div class="usa-accordion">
+    <div class="usa-banner-header">
+      <div class="usa-grid usa-banner-inner usajobs-nav--full_bleed__banner-inner">
+      <img src="/img/favicons/favicon-57.png" alt="U.S. flag">
+      <p>An official website of the United States government</p>
+      <button class="usa-accordion-button usa-banner-button"
+        aria-expanded="false" aria-controls="core-unauth-gov-banner">
+        <span class="usa-banner-button-text">Here's how you know</span>
+      </button>
+      </div>
+    </div>
+    <div class="usa-banner-content usa-grid usa-accordion-content" id="core-unauth-gov-banner">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The .gov means it’s official.</strong>
+            <br>
+            Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+            <br>
+            <br>
+            There are some exceptions to this rule. During the USAJOBS application process, you may be sent to an agency specific application system that DOES NOT contain a .mil or .gov. Rest assured, if you apply to any job through USAJOBS.gov your information is safe and secure.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/img/icon-https.svg" alt="SSL">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The site is secure.</strong>
+            <br>
+            The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gov banner END -->
+
+  <nav class="usajobs-nav usajobs-nav--core-v2" role="navigation" aria-label="main navigation" data-object="nav">
+    <div class="usajobs-nav__body usajobs-nav--core-v2__body">
+      <div class="usajobs-nav__header-container usajobs-nav--core-v2__header-container">
+        <div class="usajobs-nav__header usajobs-nav--core-v2__header">
+          <div class="usajobs-nav__brand-container usajobs-nav--core-v2__brand-container">
+            <a class="usajobs-nav__brand usajobs-nav--core-v2__brand" href="/">
+              <span class="logo usajobs-nav--core-v2__logo" title="USAJOBS logo"></span>
+            </a>
+          </div>
+          <div class="usajobs-nav__menu" id="usajobs-menu">
+            <ul>
+              <li class="usajobs-nav__menu-container usajobs-nav__account usajobs-nav--core-v2 usajobs-nav--core-v2__menu-container">
+                <a id="top-nav-account" class="usajobs-nav__section-link usajobs-nav--core-v2__section-link" href="https://www.usajobs.gov/Applicant/MyAccount/Home/" title="Account">
+                  <span class="fas fa-sign-in-alt fa-fw"></span>
+                  <span class="usajobs-nav__account_name">Sign In</span>
+                  <span class="usajobs-nav__first_name usajobs-nav--core-v2__first_name">Sign In</span>
+                </a>
+              </li>
+              <li class="usajobs-nav__menu-container usajobs-nav__help usajobs-nav--core-v2__menu-container usajobs-nav--core-v2__help">
+                <a id="top-nav-help" class="usajobs-nav__section-link usajobs-nav--core-v2__section-link" href="http://usajobs.github.io/Help" title="Help">
+                  <span class="fas fa-question-circle fa-fw"></span> Help
+                </a>
+              </li>
+              <li class="usajobs-nav__menu-container usajobs-nav__menu-search usajobs-nav--core-v2__menu-container" data-state="is-closed">
+                <a id="top-nav-search" data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search-form--core-v2-unauth" class="usajobs-nav__section-link usajobs-nav--core-v2__section-link" href="/" title="Job Search">
+                  <span class="fas fa-search fa-fw"></span> Search
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="usajobs-search-form--core-v2-unauth" class="usajobs-nav__search" aria-expanded="false" role="menubar" aria-label="Search bar" aria-labelledby="top-nav-search">
+      <form action="/Search" method="get" novalidate="novalidate" role="search">
+  <fieldset class="usajobs-nav--full_bleed__search-body">
+    <div class="usajobs-nav__search-keywords-container">
+      <label for="search-keyword">
+        <i class="usajobs-nav__search-keywords-icon fa fa-search"></i>
+        Keywords
+      </label>
+      <input id="search-keyword" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, department &amp; agency, series" type="text" value="" autocomplete="off">
+    </div>
+    <div class="usajobs-nav__search-location-container">
+      <label for="search-location">
+        <i class="usajobs-nav__search-location-icon fa fa-map-marker"></i>
+        Location
+      </label>
+      <input id="search-location" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, state, zip, or country" autocomplete="off">
+      <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+      <input type="hidden" id="AutoCompleteSelected" name="AutoCompleteSelected">
+    </div>
+    <div class="usajobs-nav__search-button-container usajobs-nav--full_bleed__search-button-container">
+      <button class="usa-button usa-button-primary-alt usajobs-nav__search-button">
+        Search
+      </button>
+    </div>
+  </fieldset>
+</form>
+
+    </div>
+  </nav>
+</header>
+
+<div class="usajobs-joa-prev-next">
+  <div class="usajobs-joa-prev-next__body">
+    <a href="#prev-search-result" class="usajobs-joa-prev-next__prev"><span class="fa fa-angle-left"></span>
+       Prev
+    </a>
+    <a href="#back-to-search-results" class="usajobs-joa-prev-next__back"><span class="fa fa-angle-up"></span>
+      Back to results
+    </a>
+    <a href="#next-search-result" class="usajobs-joa-prev-next__next">Next <span class="fa fa-angle-right"></span>
+    </a>
+  </div>
+</div>
+
+<div xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hr="http://www.hr-xml.org/3" xmlns:oa="http://www.openapplications.org/oagis/9">
+  <div itemscope="" itemtype="http://schema.org/JobPosting">
+    <div class="usajobs-joa-banner usajobs-joa-banner--pilot">
+  <div class="usajobs-joa-banner__body usajobs-joa-banner--pilot__body">
+    <h1 class="usajobs-joa-banner__title" itemprop="title" id="job-title">
+      Customer Experience Strategist
+    </h1>
+    <h5 class="usajobs-joa-banner__dept usajobs-joa-banner--pilot__dept">
+      Other Agencies and Independent Organizations
+    </h5>
+    <a href="#agency-modal-trigger" class="usajobs-joa-banner__agency usajobs-joa-banner--pilot__agency" href="#agencycontact" itemprop="hiringOrganization" data-object-trigger="modal" data-target="#agency-modal">
+      Office of Personnel Management
+    </a>
+  </div>
+</div>
+    <nav class="usajobs-nav-secondary usajobs-joa-nav usajobs-joa-nav--pilot is-fixed-nav" role="navigation" data-object="nav-secondary" data-target="#usajobs-nav-secondary-menu--joa">
+  <div class="usajobs-nav-secondary__body usajobs-joa-nav__body" id="usajobs-menu-joa">
+    <ul class="usajobs-nav-secondary__menu">
+      <li class="usajobs-nav-secondary__container">
+        <a class="usajobs-nav-secondary__item usajobs-joa-nav__item is-active" href="#summary" data-behavior="nav-secondary.scroll-to-top nav-secondary.make-active">
+          Summary
+        </a>
+      </li>
+      <li class="usajobs-nav-secondary__container">
+        <a class="usajobs-nav-secondary__item usajobs-joa-nav__item" href="#responsibilities" data-behavior="nav-secondary.scroll-to-top nav-secondary.make-active">
+          Responsibilities
+        </a>
+      </li>
+      <li class="usajobs-nav-secondary__container">
+        <a class="usajobs-nav-secondary__item usajobs-joa-nav__item" href="#qualifications" data-behavior="nav-secondary.scroll-to-top nav-secondary.make-active">
+          Qualifications
+        </a>
+      </li>
+      <li class="usajobs-nav-secondary__container">
+        <a class="usajobs-nav-secondary__item usajobs-joa-nav__item" href="#where-you-will-work" data-behavior="nav-secondary.scroll-to-top nav-secondary.make-active">
+          Who you'll work with
+        </a>
+      </li>
+      <li class="usajobs-nav-secondary__container">
+        <a class="usajobs-nav-secondary__item usajobs-joa-nav__item" href="#how-you-will-be-evaluated" data-behavior="nav-secondary.scroll-to-top nav-secondary.make-active">
+          How you'll be evaluated
+        </a>
+      </li>
+      <li class="usajobs-nav-secondary__container">
+        <a class="usajobs-nav-secondary__item usajobs-joa-nav__item" href="#required-documents" data-behavior="nav-secondary.scroll-to-top nav-secondary.make-active">
+          Required documents
+        </a>
+      </li>
+      <li class="usajobs-nav-secondary__container more is-hidden">
+        <a class="usajobs-nav-secondary__more-toggle" href="#more" data-behavior="nav-secondary.toggle" data-target="#usajobs-nav-secondary-menu--joa"><i class="fas fa-plus"></i></a>
+        <ul class="usajobs-nav-secondary__more-container" id="usajobs-nav-secondary-menu--joa" data-state="is-closed">
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <section class="usajobs-shell usajobs-joa-pilot__shell">
+      <div class="usajobs-content-gutter">
+        <div class="usajobs-joa-intro usajobs-joa-intro--pilot">
+  <div class="usajobs-joa-intro__container usajobs-joa-intro--pilot__container">
+    <div id="summary" class="usajobs-joa-section usajobs-joa-section--pilot">
+  <h2 class="usajobs-joa-section--pilot__header is-first">Summary</h2>
+  <div itemprop="description">
+    <p>
+      We're inviting customer experience leaders to join us across government in improving the way we serve the public. You must have dedication to mission, ability to continually re-center on the customers we serve, willingness to go deep into projects and then zoom out to persuade leadership on the value of this work using data, user research and customer insights. Read about these <a href="https:/www.performance.gov/CAP/cx" target="_blank">efforts</a> and <a href="https://www.performance.gov/cx/HISPList.pdf" target="_blank">programs</a>. It’s wonky, but the Office of Management and Budget has issued <a href="https:/www.performance.gov/cx/a11-280.pdf">first-of-its-kind guidance on Customer Experience</a>.
+    </p>
+  </div>
+</div>
+  </div>
+</div>
+<aside class="usajobs-joa-pilot__aside">
+  <div class="usajobs-joa-actions--pilot is-narrow" data-object="joa-actions">
+  <div class="usajobs-joa-actions--pilot__body">
+    <div class="usajobs-joa-actions--pilot__col-apply">
+      <a href="#" class="usa-button-primary usajobs-joa-actions--pilot__apply">Apply</a>
+    </div>
+    <div class="usajobs-joa-actions--pilot__col-sub-actions">
+      <a class="usajobs-joa-actions--pilot__print" href="#print">
+        <i class="fa fa-print"></i> Print
+      </a>
+      <div class="usajobs-joa-actions--pilot__share usajobs-joa-actions-share">
+        <button class="usajobs-joa-actions-share__trigger" id="joa-share" href="#share" data-behavior="joa-actions.toggle-share" aria-haspopup="true">
+          <i class="fas fa-share-alt"></i> Share
+        </button>
+        <ul class="usajobs-joa-actions-share__list" id="joa-share-menu" aria-hidden="true" aria-labeledby="joa-share">
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="mailto:?subject=USAJOBS Job Announcement - [job title]&amp;body=Read more about [job title ] at https://www.usajobs.gov/GetJob/ViewDetails/gov-wide" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link email"
+              data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fas fa-envelope-square"></i> <span class="sr-only">Email</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2Fgov-wide%2F%3Fshare%3Dfacebook&amp;t=USAJOBS%20-%20Job%20Announcement" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link facebook"
+              target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fab fa-facebook-square"></i> <span class="sr-only">Facebook</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2Fgov-wide%2F%3Fshare%3Dlinkedin&amp;title=USAJOBS%20-%20Job%20Announcement&amp;ro=false&amp;summary=&amp;source="
+              class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link linkedin" target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fab fa-linkedin"></i> <span class="sr-only">LinkedIn</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="https://twitter.com/intent/tweet?text=USAJOBS%20-%20Job%20Announcement%20https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2Fgov-wide%2F%3Fshare%3Dtwitter&amp;source=webclient" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link twitter"
+              target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fab fa-twitter-square"></i> <span class="sr-only">Twitter</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="#joa-share-menu" data-shorten-url="https://www.usajobs.gov/GetJob/ViewDetails/gov-wide" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link link" data-behavior="joa-actions.shorten-link"
+              data-target="#joa-share-menu">
+              <i class="fas fa-link"></i> <span class="sr-only">Shorten link</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="usajobs-joa-actions--pilot__save" href="#save" data-behavior="joa-actions.toggle-save" data-state="is-unsaved">
+        Save
+      </a>
+    </div>
+  </div>
+</div>
+  <div class="usajobs-joa-overview--pilot">
+  <h3 id="overview" class="usajobs-joa-overview__header usajobs-joa-overview--pilot__header">Overview</h3>
+  <ul class="usajobs-joa-summary__list usajobs-joa-summary--pilot__list">
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="The open date is when the job was posted and the closing date is when the job will close.">
+          Open &amp; closing dates
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        <i class="fa fa-clock-o usajobs-joa-summary__closing-clock--is-warning"></i>
+        <span itemprop="datePosted">02/03/20</span> to <span itemprop="validThrough">02/07/20</span>
+      </p>
+      
+      <div class="usajobs-joa-closing-types usajobs-joa-closing-types--cut-off">
+        This job will close when we have received <strong>150 applications</strong> which may be sooner than the closing date. <a href="http://usajobs.github.io/Help/how-to/job-announcement/closing-types/#applicant-cut-off"
+          target="_blank">Learn more</a>
+      </div>
+      
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="The salary range for the job.">
+          Salary
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__salary">
+        <span itemprop="baseSalary">$76,687</span> -
+        $138,572 per year
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="A grade refers to the pay scale which sets the pay level and qualifications for the job.">
+          Pay scale &amp; grade
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__grades">
+        GS
+        
+        13 - 15
+        
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="The way that the Federal Government classifies the duration of certain jobs.">
+          Appointment type
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        Permanent
+        
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="Determines the number of hours that you will work during the week.">
+          Work schedule
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value" itemprop="employmentType">
+        Full Time
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="The Federal Government's numbered system for grouping similar occupations.">
+          Series
+        </span>
+      </h5>
+      
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        <a href="https://www.usajobs.gov/Search/?j=0301">
+          0301 Miscellaneous Administration and Program
+        </a>
+      </p>
+      
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="The Federal Government has three services that determine how you are hired: Competitive, Excepted, and Senior Executive.">
+          Service
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        
+        Competitive
+        
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="Determines if you will be a supervisor.">
+          Promotion potential
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        None
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="Determines if you will be a supervisor.">
+          Supervisory status
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        
+        No
+        
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="The level of security clearance required to hold this position.">
+          Security clearance
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        <a href="https://usajobs.github.io/Help/faq/job-announcement/security-clearances/" target="_blank">
+          None
+        </a>
+      </p>
+    </li>
+    <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">
+      <h5 class="usajobs-joa-summary__label">
+        <span rel="tooltip" title="Whether or not you will be tested for illegal drug use.">
+          Drug test
+        </span>
+      </h5>
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        No
+      </p>
+    </li>
+  </ul>
+</div>
+
+  <div id="locations" class="usajobs-joa-locations usajobs-joa-locations--pilot">
+  <h3 class="usajobs-joa-locations--v1-5__header usajobs-joa-locations--pilot__header">Locations</h3>
+  <ul class="usajobs-joa-locations__list usajobs-joa-locations--pilot__list">
+    
+    <li class="usajobs-joa-locations__item usajobs-joa-locations--pilot__item">
+      <a class="usajobs-joa-locations__link" href="#map" itemtype="http://schema.org/PostalAddress">
+        <div class="usajobs-joa-locations__figure">
+          <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="usajobs-joa-locations__body">
+          <span class="usajobs-joa-locations__street" itemprop="streetAddress">
+            
+          </span>
+          <span class="usajobs-joa-locations__city" itemprop="addressLocality">
+            Washington, DC
+          </span>
+          <span class="usajobs-joa-locations__vacancies">
+            
+            Many vacancies
+            
+          </span>
+        </div>
+      </a>
+    </li>
+    
+    <li class="usajobs-joa-locations__item usajobs-joa-locations--pilot__item">
+      <a class="usajobs-joa-locations__link" href="#map" itemtype="http://schema.org/PostalAddress">
+        <div class="usajobs-joa-locations__figure">
+          <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="usajobs-joa-locations__body">
+          <span class="usajobs-joa-locations__street" itemprop="streetAddress">
+            
+          </span>
+          <span class="usajobs-joa-locations__city" itemprop="addressLocality">
+            Baltimore, MD
+          </span>
+          <span class="usajobs-joa-locations__vacancies">
+            
+            Many vacancies
+            
+          </span>
+        </div>
+      </a>
+    </li>
+    
+  </ul>
+  
+  
+  <div class="usajobs-joa-sub-section usajobs-joa-sub-section--pilot">
+    <div id="relocationauthorized" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--pilot__container">
+      <h5 class="usajobs-joa-sub-section__small-title">
+        <span rel="tooltip" title="Whether or not you will be reimbursed for relocation expenses.">
+          Relocation paid
+        </span>
+      </h5>
+      <p class="usajobs-joa-sub-section__text">
+        
+        No
+        
+      </p>
+    </div>
+
+    <div id="telework-eligble" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--pilot__container">
+      <h5 class="usajobs-joa-sub-section__small-title">
+        <span rel="tooltip" title="Determines if you will be able to work from home on some days.">
+          Telework eligible
+        </span>
+      </h5>
+      <p class="usajobs-joa-sub-section__text">
+        
+        Yes as determined by agency policy
+        
+      </p>
+    </div>
+  </div>
+</div>
+  <div class="usajobs-joa-help">
+  <a href="https://www.usajobs.gov/Help/how-to/job-announcement/" class="usajobs-joa-help__link">
+    <span class="usajobs-joa-help__figure">
+      <span class="fas fa-question-circle"></span>
+    </span>
+    <span class="usajobs-joa-help__body">
+      Get help understanding job announcements
+    </span>
+  </a>
+</div>
+  <div class="usajobs-joa-actions-numbers--pilot is-narrow">
+  <div class="usajobs-joa-actions-numbers--pilot__container">
+    <h5 class="usajobs-joa-actions-numbers--pilot__header">Announcement number</h5>
+    <p class="usajobs-joa-actions-numbers--pilot__number">
+      NPS-12345678910-DE-OPM
+    </p>
+  </div>
+  <div class="usajobs-joa-actions-numbers--pilot__container">
+    <h5 class="usajobs-joa-actions-numbers--pilot__header">Control number</h5>
+    <p class="usajobs-joa-actions-numbers--pilot__number">
+      475981400
+    </p>
+  </div>
+</div>
+</aside>
+
+        <main class="usajobs-content-well usajobs-joa-pilot__content-well" id="main-content" role="main" aria-label="Main Job announcement content">
+          <div id="responsibilities" class="usajobs-joa-section usajobs-joa-section--pilot">
+  <h2 class="usajobs-joa-section--pilot__header">Responsibilities</h2>
+  <p>
+    In this role, you will:
+  </p>
+  <div itemprop="description">
+    <ul class="usajobs-list-bullets">
+      
+      <li>Build agency understanding of who their customers are and the value they seek from Federal services, and what aspects of customer experience are most important to them when.</li>
+      
+      <li>Creatively gather and package compelling customer experience data to support leadership decision-making.</li>
+      
+      <li>Bring together the right people and supporting culture to develop strategies for improving CX, and plan for achieving measurable outcomes.</li>
+      
+      <li>Act as a relentless entrepreneur driving opportunities and projects through to completion creatively within a bureaucracy, while maintaining respect for colleagues and tactfully building coalitions of support.</li>
+      
+      <li>Work alongside colleagues to embed human-centered design practices so that others can both benefit from these approaches and learn methods for sustainable change.</li>
+      
+    </ul>
+  </div>
+</div>
+
+          <div id="qualifications" class="usajobs-joa-section usajobs-joa-section--pilot" itemprop="qualifications">
+  <h2 class="usajobs-joa-section--pilot__header">Qualifications</h2>
+  <p>
+    Subject matter experts will evaluate the first three pages of your resume and your design portfolio based on these competencies. You must show 52 weeks full time experience in all competencies listed below in order to qualify. Please make sure your resume reflects this time required.
+  </p>
+  <ul class="usajobs-list-bullets">
+    
+    <li><strong>Adaptive Leadership and Resiliency:</strong> The ideal candidate leads with an entrepreneurial spirt and emotional intelligence. Demonstrated, for example, in finding an effective direction given organizational constraints, friction, and bureaucracy. The candidate will lead by example, form coalitions, and manage stakeholders. These leadership skills include communication, relationship management, diplomacy, flexibility, optimism, resilience, mission-orientation, humility, and team orientation.</li>
+    
+    <li><strong>Customer Experience Strategist:</strong> The ideal candidate has experience aligning customer experience strategy to the organization’s mission, vision and strategic priorities. Following, the candidate can demonstrate how that strategy was enacted through, for example, developing and launching a new product or initiative, and standing up a new practice area, each carried through to a desired result. In this practice, the candidate will show how progress and outcomes are measured against direct customer input. Understands core functional areas of how strategy components (governance, measurement, people, technology, service design, and process) fit together. Can clearly articulate a vision to demonstrate impact.</li>
+    
+    <li><strong>Managing Customer Experience Implementation:</strong> Implement CX initiatives that follow the customer’s journey across organizational silos. Use information collected, combined with operational data, to drive decision-making, demonstrate mission effectiveness, and support continuous improvement. Experience working in a context where priorities can be ambiguous and /or change rapidly. Can clearly communicate to all stakeholders and produce key reports.</li>
+    
+    <li><strong>Human Centered Design Practices:</strong> Experience using applied design in service of positive customer outcomes, which could include design thinking, service design, content design, product design, behavioral science, ethnographic research, usability research, or accessibility assessments (including 508 standards). Has the ability to successfully communicate the impact of good design to stakeholders and leadership with a variety of professional backgrounds.</li>
+    
+  </ul>
+  <h4>General Schedule pay scale - Grade Levels</h4>
+  <p>
+    Not all agencies may be hiring at all grade levels. Thus when you apply please select the lowest grade level you are willing to accept.
+  </p>
+  <p>
+    <strong>GS 13 ($78,687 - $99,691):</strong> To quality for the GS 13 level, your resume and portfolio will show at least one year experience participating in CX strategy, using diverse CX measurement tools to define and implement CX projects, and have demonstrated experience implementing design methods despite changing circumstances and stakeholders with diverse priorities.
+  </p>
+  <p>
+    <strong>GS 14 ($90,621 - $117,810):</strong> To quality for the GS 14 level, your resume and portfolio will show at least one year experience showing you can work across silos to successfully deliver quantifiable impact, that you’ve led and advised leadership on CX strategy, implemented projects in an agile way through the entire lifecycle with a focus on CX measurement metrics, and have been recognized as an expert on design methods.
+  </p>
+  <p>
+    <strong>GS 15 ($106,595 - $138,572):</strong> To quality for the GS 15 level, in addition to what is described at the 14 level, your resume and portfolio will show at least one year experience leading organizations and building teams to drive multiple CX initiatives across organizational silos. You have extensive experience using customer data and user research to drive your organization to become more customer focused.
+  </p>
+  <div id="hiring-paths" class="usajobs-joa-intro-hiring-paths usajobs-joa-intro-hiring-paths--pilot">
+  <h3 class="usajobs-joa-intro-hiring-paths__section-title usajobs-joa-intro-hiring-paths--pilot__section-title">This job is open to</h3>
+  <ul class="usajobs-joa-intro-hiring-paths__list usajobs-joa-intro-hiring-paths--pilot__list">
+    
+    
+    <li class="usajobs-joa-intro-hiring-paths__item usajobs-joa-intro-hiring-paths--pilot__item">
+      <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/public/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+        <div class="usajobs-joa-intro-hiring-paths__figure">
+          <div class="usajobs-joa-intro-hiring-paths__icon">
+            <svg class="usajobs-icon--hiring-path">
+              <use xlink:href="#public"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
+          <h4 class="usajobs-joa-intro-hiring-paths__title">
+            The public
+          </h4>
+          <p class="usajobs-joa-intro-hiring-paths__detail">
+            U.S. citizens, nationals or those who owe allegiance to the U.S.
+          </p>
+        </div>
+      </a>
+    </li>
+    
+    
+  </ul>
+</div>
+
+</div>
+
+          <div id="where-you-will-work" class="usajobs-joa-section usajobs-joa-section--pilot">
+  <h2 class="usajobs-joa-section--pilot__header">Who you'll work with</h2>
+  <p>
+    <p>From small businesses seeking loans to families receiving disaster support, every interaction between the Federal government and the public is an opportunity to demonstrate the government is working to meet their needs. To truly transform the way the public experiences government, we need to approach rebuilding trust transaction by transaction internally and externally, interaction by interaction across the life events people experience. And we need you to help us do it.</p><p>We're working with 25 of the nation's highest impact public-facing programs at <a href="https://www.performance.gov/cx/HISPList.pdf" target="_blank">14 federal agency headquarters</a> in Washington, DC and Baltimore, MD to implement a more systematic, government-wide approach towards elevating the importance of a human-centered methods and increasing the public’s trust and satisfaction with our Federal institutions.</p><p>Candidates may be considered for other roles even if you do not formally submit an application for the other roles we are seeking to fill under the Customer Experience Strategist position i.e., if you apply as a Customer Experience Strategist but we see potential for a Design Strategist, we will consider you for that position based on our own assessment.</p><p>Qualified applicants will remain available for selection for one year after the lists are created.</p>
+  </p>
+  <ul class="usa-accordion-bordered">
+    <li>
+      <button class="usa-accordion-button" aria-expanded="false" aria-controls="benefits">
+        Benefits
+      </button>
+      <div id="benefits" itemprop="jobBenefits" class="usa-accordion-content">
+        <p>
+          As a new or existing federal employee, you and your family may have access to a range of benefits. Your benefits depend on the type of position you have - whether you’re a permanent, part-time, temporary or an intermittent employee. You
+          may be eligible for the following benefits, however, check with your agency to make sure you’re eligible under their policies.
+        </p>
+        <ul>
+          <li>
+            <a href="https://www.usajobs.gov/Help/working-in-government/benefits/" target="_blank">
+              Learn more about federal benefits
+            </a>
+          </li>
+          <li>
+            <a href="https://www.usa.gov/benefits-for-federal-employees" target="_blank">
+              Learn more about benefits at the Office of Personnel Management
+            </a>
+          </li>
+        </ul>
+    </li>
+    <li>
+      <button class="usa-accordion-button" aria-expanded="false" aria-controls="contact-agency">
+        Contact the agency
+      </button>
+      <div id="contact-agency" class="usa-accordion-content">
+        <div class="usajobs-joa-agency--pilot">
+          <h3 class="usajobs-joa-agency--pilot__contact-name">
+            Christina Hoffman
+          </h3>
+          <div>
+            <div class="usajobs-joa-sub-section__container">
+              <h5 class="usajobs-sub-section__small-title">Phone</h5>
+              <p class="usajobs-joa-sub-section__text">
+                <a href="tel://202-905-9063">
+                  202-905-9063
+                </a>
+              </p>
+              <h5 class="usajobs-sub-section__small-title">Email</h5>
+              <p class="usajobs-joa-sub-section__text">
+                <a href="mailto:Christina.Hoffman@opm.gov">
+                  Christina.Hoffman@opm.gov
+                </a>
+              </p>
+            </div>
+            <div class="usajobs-joa-sub-section__container">
+              <h5 class="usajobs-sub-section__small-title">Address</h5>
+              <p class="usajobs-joa-sub-section__text">
+                <address>
+                  Office of Personnel Management<br>
+                  1900 E Street NW<br>
+                  Washington,
+                  DC<br>
+                  20415<br>
+                  US
+                </address>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+          <div id="how-you-will-be-evaluated" class="usajobs-joa-section usajobs-joa-section--pilot">
+  <h2 class="usajobs-joa-section__header--pilot">How you will be evaluated</h2>
+  <div class="usa-alert usa-alert-warning usajobs-joa-section-warning is-slim">
+  <div class="usa-alert-body">
+    <h4 class="usa-alert-heading">
+      The evaluation process for this job is different from a typical job announcement.
+    </h4>
+  </div>
+</div>
+  <p>
+    The qualifications for this position will be evaluated by subject matter experts. Apply only if you meet the qualifications. If you are not selected for this position you may be considered for similar positions at High Impact Service Provider agencies for up to 1 year.
+  </p>
+  <h4>Resume review</h4>
+  <p>
+    Subject matter experts will review the first three pages of your resume to determine your technical qualifications for your chosen role(s) based on the required competencies.
+  </p>
+  <h4>Qualifying phone interviews</h4>
+  <p>
+    If the subject matter experts determine that your resume reflects the required competencies, you will have at least one phone interview to further assess whether your experience meets the required competencies for your chosen role(s). You may
+    meet with more than one subject matter expert for a determination to be made.
+  </p>
+  <h4>Ranking and preference </h4>
+  <p>
+    <a href="#evaluation-modal-trigger" class="usajobs-joa-section--pilot__modal-trigger" href="#evaluation-modal-trigger" data-object-trigger="modal" data-target="#evaluation-modal">Preference will be applied</a> to applicants who move forward
+    after the qualifying phone interviews.
+  </p>
+  <h4>Future consideration</h4>
+  <p>
+    If you are not selected for this position you may be considered for similar positions at High Impact Service Provider agencies for up to 1 year.
+  </p>
+  <h3>Get answers to questions about this process and position</h3>
+  <p>
+    To address questions about the application process and requirements, we will optional "office hours" phone calls during the application period for this position on January 29th at 3 PM EST.
+  </p>
+  <ul>
+    <li><strong>February 3-7</strong>: The announcement will be open during this period or until midnight the day 150 applicants apply.</li>
+    <li><strong>Late February</strong>: First round interviews (30 minute phone calls)</li>
+    <li><strong>Early March</strong>: Second round interviews  (1 hour phone calls)</li>
+    <li><strong>Mid-to-late March</strong>: Agency-specific interviews with qualifying applicants</li>
+    <li><strong>Early April</strong>: Tentative selection offers are sent to applicants. Applicants have 48 hours to confirm or decline offers before being considered no longer interested.</li>
+  </ul>
+</div>
+
+          <div id="required-documents" class="usajobs-joa-section usajobs-joa-section--pilot usajobs-joa-required-documents--pilot">
+  <h2 class="usajobs-joa-section--pilot__header">Required Documents</h2>
+  <div class="usa-alert usa-alert-warning usajobs-joa-section-warning">
+  <div class="usa-alert-body">
+    <h4 class="usa-alert-heading">
+      Only the first 3 pages of your submitted resume will be reviewed
+    </h4>
+    <p class="usa-alert-text">
+      Upload your resume as a PDF to ensure consistent formatting.
+    </p>
+  </div>
+</div>
+
+  <ul class="usa-accordion-bordered">
+    <li>
+      <button class="usa-accordion-button" aria-expanded="true" aria-controls="required-docs-all-applicants">
+        All applicants
+      </button>
+      <div id="required-docs-all-applicants" class="usa-accordion-content">
+        <h4>All applicants must submit a resume and a design portfolio.</h4>
+        <ul>
+          <li><strong>Resume</strong>: We will review up to 3 pages of work experience. On your resume, ensure that the qualifications for this job are reflected in the first three pages. Also, be sure to <a href="https://www.usajobs.gov/Help/faq/application/documents/resume/what-to-include/#what-to-include-in-your-resume" target="_blank">include the start and end dates for each position you held</a>, either month and year or month, day, and year for short-term projects. If your position was not full time, you must also indicate the number of hours worked per week.</li>
+          <li><strong>Design portfolio</strong>: A PDF limited to 3MB, or include a URL within your resume, of work samples that exemplify your relevant experience. The portfolio can include case studies, examples of project work, and/or journey maps. Either your resume or portfolio should include what your role was in each of the projects.</li>
+        <p>
+        </p>
+      </div>
+    </li>
+    <li>
+      <button class="usa-accordion-button" aria-expanded="false" aria-controls="required-docs-feds">
+        <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#federal-employees-competitive"></use>
+        </svg>
+        Current or former federal employee
+      </button>
+      <div id="required-docs-feds" class="usa-accordion-content">
+        <h4>All current or former federal employees:</h4>
+        <ul>
+          <li>SF-50: Notification of Personnel Action</li>
+        </ul>
+
+        <h4>Former federal employees under <a href="https://www.usajobs.gov/Help/working-in-government/unique-hiring-paths/federal-employees/career-transition/" target="_blank">CTAP/ICTAP</a> consideration:</h4>
+        <ul>
+          <li>SF-50: Notification of Personnel Action</li>
+          <li>A copy of the separation letter or RIF notice</li>
+          <li>A copy of a current (or last) performance rating of record</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <button class="usa-accordion-button" aria-expanded="false" aria-controls="required-docs-vets">
+        <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#veterans"></use>
+        </svg>
+        Veterans
+      </button>
+      <div id="required-docs-vets" class="usa-accordion-content">
+        <ul>
+          <li>DD-214: Certificate of Release or Discharge from Active Duty</li>
+          <li>VA Letter</li>
+          <li>SF-15: Application for 10-point Veterans' Preference (Optional)</li>
+          <li>A statement of intent to discharge from your agency (if you are a veteran who has not yet been discharged)</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <button class="usa-accordion-button" aria-expanded="false" aria-controls="required-docs-disability">
+        <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#individuals-with-disabilities"></use>
+        </svg>
+        Individuals with a disability
+      </button>
+      <div id="required-docs-disability" class="usa-accordion-content">
+        <ul>
+          <li>
+            Certified verification of a disability from a licensed medical professional; a licensed vocational District of Columbia agency or U.S. territory that issues or provides disability benefits.
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+
+          <div class="usajobs-joa-actions--pilot is-wide" data-object="joa-actions">
+  <div class="usajobs-joa-actions--pilot__body">
+    <div class="usajobs-joa-actions--pilot__col-apply">
+      <a href="#" class="usa-button-primary usajobs-joa-actions--pilot__apply">Apply</a>
+    </div>
+    <div class="usajobs-joa-actions--pilot__col-sub-actions">
+      <a class="usajobs-joa-actions--pilot__print" href="#print">
+        <i class="fa fa-print"></i> Print
+      </a>
+      <div class="usajobs-joa-actions--pilot__share usajobs-joa-actions-share">
+        <button class="usajobs-joa-actions-share__trigger" id="joa-share" href="#share" data-behavior="joa-actions.toggle-share" aria-haspopup="true">
+          <i class="fas fa-share-alt"></i> Share
+        </button>
+        <ul class="usajobs-joa-actions-share__list" id="joa-share-menu" aria-hidden="true" aria-labeledby="joa-share">
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="mailto:?subject=USAJOBS Job Announcement - [job title]&amp;body=Read more about [job title ] at https://www.usajobs.gov/GetJob/ViewDetails/gov-wide" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link email"
+              data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fas fa-envelope-square"></i> <span class="sr-only">Email</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2Fgov-wide%2F%3Fshare%3Dfacebook&amp;t=USAJOBS%20-%20Job%20Announcement" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link facebook"
+              target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fab fa-facebook-square"></i> <span class="sr-only">Facebook</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2Fgov-wide%2F%3Fshare%3Dlinkedin&amp;title=USAJOBS%20-%20Job%20Announcement&amp;ro=false&amp;summary=&amp;source="
+              class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link linkedin" target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fab fa-linkedin"></i> <span class="sr-only">LinkedIn</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="https://twitter.com/intent/tweet?text=USAJOBS%20-%20Job%20Announcement%20https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2Fgov-wide%2F%3Fshare%3Dtwitter&amp;source=webclient" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link twitter"
+              target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fab fa-twitter-square"></i> <span class="sr-only">Twitter</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="#joa-share-menu" data-shorten-url="https://www.usajobs.gov/GetJob/ViewDetails/gov-wide" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link link" data-behavior="joa-actions.shorten-link"
+              data-target="#joa-share-menu">
+              <i class="fas fa-link"></i> <span class="sr-only">Shorten link</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="usajobs-joa-actions--pilot__save" href="#save" data-behavior="joa-actions.toggle-save" data-state="is-unsaved">
+        Save
+      </a>
+    </div>
+  </div>
+</div>
+          <div class="usajobs-joa-actions-numbers--pilot is-wide">
+  <div class="usajobs-joa-actions-numbers--pilot__container">
+    <h5 class="usajobs-joa-actions-numbers--pilot__header">Announcement number</h5>
+    <p class="usajobs-joa-actions-numbers--pilot__number">
+      NPS-12345678910-DE-OPM
+    </p>
+  </div>
+  <div class="usajobs-joa-actions-numbers--pilot__container">
+    <h5 class="usajobs-joa-actions-numbers--pilot__header">Control number</h5>
+    <p class="usajobs-joa-actions-numbers--pilot__number">
+      475981400
+    </p>
+  </div>
+</div>
+          <div id="fair-and-transparent" class="usajobs-joa-section usajobs-joa-section--pilot usajobs-joa-fair-and-transparent">
+  <h3 class="usajobs-joa-section--pilot__header">Fair &amp; Transparent</h3>
+  <p>
+    The Federal hiring process is setup to be fair and transparent. Please read the following guidance:
+  </p>
+  <ul class="usajobs-joa-fair-and-transparent__list">
+    <li class="usajobs-joa-fair-and-transparent__item">
+      <a class="usajobs-joa-fair-and-transparent__link" href="https://usajobs.github.io/Help/equal-employment-opportunity/" target="_blank">Equal Employment Opportunity (EEO) Policy</a>
+    </li>
+    <li class="usajobs-joa-fair-and-transparent__item">
+      <a class="usajobs-joa-fair-and-transparent__link" href="https://usajobs.github.io/Help/reasonable-accommodation/" target="_blank">
+        Reasonable accommodation policy
+      </a>
+    </li>
+    <li class="usajobs-joa-fair-and-transparent__item">
+      <a class="usajobs-joa-fair-and-transparent__link" href="https://usajobs.github.io/Help/working-in-government/fair-and-transparent/financial-suitability/" target="_blank">Financial suitability</a>
+    </li>
+    <li class="usajobs-joa-fair-and-transparent__item">
+      <a class="usajobs-joa-fair-and-transparent__link" href="https://usajobs.github.io/Help/working-in-government/fair-and-transparent/selective-service/" target="_blank">
+        Selective Service
+      </a>
+    </li>
+    <li class="usajobs-joa-fair-and-transparent__item">
+      <a class="usajobs-joa-fair-and-transparent__link" href="https://usajobs.github.io/Help/working-in-government/fair-and-transparent/probationary-period/" target="_blank">
+        New employee probationary period
+      </a>
+    </li>
+    <li class="usajobs-joa-fair-and-transparent__item">
+      <a class="usajobs-joa-fair-and-transparent__link" href="https://usajobs.github.io/Help/working-in-government/fair-and-transparent/signature-false-statements/" target="_blank">
+        Signature and false statements
+      </a>
+    </li>
+    <li class="usajobs-joa-fair-and-transparent__item">
+      <a class="usajobs-joa-fair-and-transparent__link" href="https://usajobs.github.io/Help/working-in-government/fair-and-transparent/privacy-act/" target="_blank">
+        Privacy Act
+      </a>
+    </li>
+    <li class="usajobs-joa-fair-and-transparent__item">
+      <a class="usajobs-joa-fair-and-transparent__link" href="https://usajobs.github.io/Help/working-in-government/fair-and-transparent/social-security-number/" target="_blank">
+        Social security number request
+      </a>
+    </li>
+  </ul>
+</div>
+          <p class="usajobs-joa__authenticity-note">
+            This job originated on <a href="https://www.usajobs.gov/">www.usajobs.gov</a>. For the full announcement and to apply, visit <a href="https://www.usajobs.gov/GetJob/ViewDetails/gov-wide">www.usajobs.gov/GetJob/ViewDetails/gov-wide</a>.
+            Only resumes submitted according to the instructions on the job announcement listed at <a href="https://www.usajobs.gov/">www.usajobs.gov</a> will be considered.
+          </p>
+        </main>
+      </div>
+    </section>
+  </div>
+</div>
+<div class="usajobs-modal usajobs-joa-agency-modal" data-object="modal" data-state="is-closed" id="agency-modal" aria-hidden="true" role="dialog" aria-labelledby="agency-modal-heading" aria-describedby="agency-modal-description">
+  <div class="usajobs-modal__dialog">
+    <div class="usajobs-modal__content">
+      <div id="agency-modal-description" class="usajobs-assistive-text">
+        Beginning of a dialog window for the agency announcing this job. It begins with a heading 2 called &quot;Learn more about Office of Personnel Management&quot;. Escape will cancel and close the window.
+      </div>
+      <div class="usajobs-modal__header">
+        <p class="usajobs-joa-agency-modal__sub-title">
+          Learn more about
+        </p>
+        <h2 id="usajobs-modal-heading" class="usajobs-modal__title">
+          Office of Personnel Management
+        </h2>
+      </div>
+      <div class="usajobs-modal__body">
+        
+        <p class="usajobs-joa-agency-modal__lead">
+          <p>From small businesses seeking loans to families receiving disaster support, every interaction between the Federal government and the public is an opportunity to demonstrate the government is working to meet their needs. To truly transform the way the public experiences government, we need to approach rebuilding trust transaction by transaction internally and externally, interaction by interaction across the life events people experience. And we need you to help us do it.</p><p>We're working with 25 of the nation's highest impact public-facing programs at <a href="https://www.performance.gov/cx/HISPList.pdf" target="_blank">14 federal agency headquarters</a> in Washington, DC and Baltimore, MD to implement a more systematic, government-wide approach towards elevating the importance of a human-centered methods and increasing the public’s trust and satisfaction with our Federal institutions.</p><p>Candidates may be considered for other roles even if you do not formally submit an application for the other roles we are seeking to fill under the Customer Experience Strategist position i.e., if you apply as a Customer Experience Strategist but we see potential for a Design Strategist, we will consider you for that position based on our own assessment.</p><p>Qualified applicants will remain available for selection for one year after the lists are created.</p>
+        </p>
+        
+        <div class="usajobs-joa-agency-modal__contact-info">
+          <div id="agencycontact" class="usajobs-joa-agency--v1-5" itemprop="hiringOrganization">
+  <h3 class="usajobs-joa-agency--v1-5__contact-info">Agency contact information</h3>
+  <h3 class="usajobs-joa-agency--v1-5__contact-name">
+    <span class="fa fa-user"></span>
+    Kim Brown
+  </h3>
+  <div>
+    <div class="usajobs-joa-sub-section__container">
+      <h5 class="usajobs-sub-section__small-title">Phone</h5>
+      <p class="usajobs-joa-sub-section__text">
+        <a href="tel://202-619-7235">202-619-7235</a>
+      </p>
+      <h5 class="usajobs-sub-section__small-title">TDD</h5>
+      <p class="usajobs-joa-sub-section__text">
+        <a href="tel:1-304-480-8725">304-480-8725</a>
+      </p>
+
+      <h5 class="usajobs-sub-section__small-title">Email</h5>
+      <p class="usajobs-joa-sub-section__text">
+        <a href="mailto:kim_d_brown@nps.gov">
+          kim_d_brown@nps.gov
+        </a>
+      </p>
+    </div>
+    <div class="usajobs-joa-sub-section__container">
+      <h5 class="usajobs-sub-section__small-title">Address</h5>
+      <p class="usajobs-joa-sub-section__text">
+        <address>
+          Cultural Resource Business Office<br>
+          1849 C Street NW<br>
+          DC,
+          WA
+          20240<br>
+          US
+        </address>
+      </p>
+    </div>
+  </div>
+  <a href="#agency-modal-trigger" class="usajobs-joa-agency--v1-5__learn-more" href="#agencycontact" data-object-trigger="modal" data-target="#agency-modal">
+    Learn more about this agency
+  </a>
+</div>
+        </div>
+      </div>
+
+      
+      <div class="usajobs-modal__footer usajobs-joa-agency-modal__url">
+        <h3>Visit our careers page</h3>
+        <p>
+          Learn more about what it's like to work at Office of Personnel Management, what the agency does, and about the types of careers this agency offers.
+        </p>
+        <p>
+          <a href="https://design.usajobs.gov/">https://design.usajobs.gov/</a>
+        </p>
+      </div>
+      
+      <div class="usajobs-modal__actions">
+        <button class="usajobs-modal__close" data-behavior="modal.close">
+          <span class="usajobs-assistive-text">Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="usajobs-modal usajobs-joa-evaluation-modal" data-object="modal" data-state="is-closed" id="evaluation-modal" aria-hidden="true" role="dialog" aria-labelledby="agency-modal-heading" aria-describedby="agency-modal-description">
+  <div class="usajobs-modal__dialog">
+    <div class="usajobs-modal__content">
+      <div id="agency-modal-description" class="usajobs-assistive-text">
+        Beginning of a dialog window for details on how you will be evaluated for this job. It begins with a heading 2 called &quot;Evaluation and preference&quot;. Escape will cancel and close the window.
+      </div>
+      <div class="usajobs-modal__header">
+        <h2 id="usajobs-modal-heading" class="usajobs-modal__title">
+          Evaluation and preference
+        </h2>
+      </div>
+      <div class="usajobs-modal__body">
+        <h3>Category rating</h3>
+        <p>
+          Qualified candidates will be assigned to one of the following quality categories:
+        </p>
+        <p>
+          <strong>Best Qualified</strong>: Candidates in this category possess good skills and experience above the minimum requirements for the announced position.
+        </p>
+        <p>
+          <strong>Well Qualified</strong>: Candidates in this category fall in between Best Qualified and Qualified.
+        </p>
+        <p>
+          <strong>Qualified</strong>: Candidates in this category meet the minimum experience requirements for the announced position.
+        </p>
+        <h3>Veterans' Preference</h3>
+        <p>Veteran preference eligibles are listed ahead of non-preference eligibles within each quality category. Based upon your category and score, you may be referred to the selecting official. </p>
+      </div>
+      <div class="usajobs-modal__actions">
+        <button class="usajobs-modal__close" data-behavior="modal.close">
+          <span class="usajobs-assistive-text">Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+    <symbol viewBox="0 0 46 46" id="family-of-overseas-employees">
+        <title>family-of-overseas-employees</title>
+        <g id="family-of-overseas-employees-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="family-of-overseas-employees-family-of-overseas-employees">
+                <path d="M22.9992043,45 C10.8497486,45 1,35.1506076 1,23 C1,10.8493924 10.8497486,1 22.9992043,1 C35.1502514,1 45,10.8493924 45,23 C45,35.1506076 35.1502514,45 22.9992043,45 Z" id="family-of-overseas-employees-Fill-1-Copy-3" fill="#046B99"></path>
+                <g id="family-of-overseas-employees-plane" transform="translate(10.000000, 9.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M24.5833367,10.4166667 L18.760993,10.4166667 L13.3340138,0.297447917 C13.2202659,0.11260079 13.0187637,6.99049308e-08 12.8017221,0 L9.79198255,0 C9.38312838,0 9.08437838,0.38609375 9.18698255,0.781822917 L10.91792,10.4166667 L5.19614922,10.4166667 L3.37823255,7.38677083 C3.26527905,7.19851712 3.06183537,7.08333122 2.84229505,7.08333333 L0.625211715,7.08333333 C0.230836715,7.08333333 -0.0649966183,7.44416667 0.0123471317,7.83088542 L1.11281588,13.3333854 L0.0123471317,18.8357292 C-0.0649966183,19.2225 0.230836715,19.5833333 0.625263798,19.5832812 L2.84234713,19.5831771 C3.06187838,19.5831771 3.26531588,19.4679687 3.37823255,19.2797396 L5.19614922,16.25 L10.91792,16.25 L9.18698255,25.8848437 C9.08437838,26.280625 9.38312838,26.6666667 9.79198255,26.6666667 L12.8017221,26.6666667 C13.0187637,26.6666666 13.2202659,26.5540659 13.3340138,26.3692187 L18.761045,16.25 L24.5833367,16.25 C27.5748992,16.25 30.0000034,14.9441667 30.0000034,13.3333333 C30.0000034,11.7225 27.5748992,10.4166667 24.5833367,10.4166667 Z" id="family-of-overseas-employees-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="federal-employees-competitive">
+        <title>federal-employees-competitive</title>
+        <g id="federal-employees-competitive-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="federal-employees-competitive-federal-employees">
+                <g id="federal-employees-Group-2" transform="translate(1.000000, 1.000000)">
+                    <g id="federal-employees-Group" fill="#112E51">
+                        <circle id="federal-employees-Oval-3" cx="22" cy="22" r="22"></circle>
+                    </g>
+                    <g id="federal-employees-university" transform="translate(8.000000, 8.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M28,5.6 L28,6.53333333 C28,6.79106622 27.7910662,7 27.5333333,7 L26.1333333,7 L26.1333333,7.7 C26.1333333,8.086575 25.8199083,8.4 25.4333333,8.4 L2.56666667,8.4 C2.18009167,8.4 1.86666667,8.086575 1.86666667,7.7 L1.86666667,7 L0.466666667,7 C0.208933783,7 3.15631751e-17,6.79106622 0,6.53333333 L0,5.6 C1.36488333e-06,5.41119547 0.113768252,5.24099413 0.288225,5.1688 L13.8215583,0.0354666667 C13.9358157,-0.0118433251 14.0641843,-0.0118433251 14.1784417,0.0354666667 L27.711775,5.1688 C27.8862317,5.24099413 27.9999986,5.41119547 28,5.6 Z M26.6,23.3333333 L1.4,23.3333333 C0.626791667,23.3333333 0,23.960125 0,24.7333333 L0,25.6666667 C3.15631751e-17,25.9243995 0.208933783,26.1333333 0.466666667,26.1333333 L27.5333333,26.1333333 C27.7910662,26.1333333 28,25.9243995 28,25.6666667 L28,24.7333333 C28,23.960125 27.3732083,23.3333333 26.6,23.3333333 Z M3.73333333,9.33333333 L3.73333333,20.5333333 L2.56666667,20.5333333 C2.18009167,20.5333333 1.86666667,20.8467583 1.86666667,21.2333333 L1.86666667,22.4 L26.1333333,22.4 L26.1333333,21.2333333 C26.1333333,20.8467583 25.8199083,20.5333333 25.4333333,20.5333333 L24.2666667,20.5333333 L24.2666667,9.33333333 L20.5333333,9.33333333 L20.5333333,20.5333333 L18.6666667,20.5333333 L18.6666667,9.33333333 L14.9333333,9.33333333 L14.9333333,20.5333333 L13.0666667,20.5333333 L13.0666667,9.33333333 L9.33333333,9.33333333 L9.33333333,20.5333333 L7.46666667,20.5333333 L7.46666667,9.33333333 L3.73333333,9.33333333 Z" id="federal-employees-competitive-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="federal-employees-excepted">
+        <title>federal-employees-excepted</title>
+        <g id="federal-employees-excepted-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="federal-employees-excepted-federal-employees">
+                <g id="federal-employees-excepted-Group-2" transform="translate(1.000000, 1.000000)">
+                    <g id="federal-employees-excepted-Group" fill="#02BFE7">
+                        <circle id="fed-excepted-Oval-3" cx="22" cy="22" r="22"></circle>
+                    </g>
+                    <g id="fed-excepted-university" transform="translate(8.000000, 8.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M28,5.6 L28,6.53333333 C28,6.79106622 27.7910662,7 27.5333333,7 L26.1333333,7 L26.1333333,7.7 C26.1333333,8.086575 25.8199083,8.4 25.4333333,8.4 L2.56666667,8.4 C2.18009167,8.4 1.86666667,8.086575 1.86666667,7.7 L1.86666667,7 L0.466666667,7 C0.208933783,7 3.15631751e-17,6.79106622 0,6.53333333 L0,5.6 C1.36488333e-06,5.41119547 0.113768252,5.24099413 0.288225,5.1688 L13.8215583,0.0354666667 C13.9358157,-0.0118433251 14.0641843,-0.0118433251 14.1784417,0.0354666667 L27.711775,5.1688 C27.8862317,5.24099413 27.9999986,5.41119547 28,5.6 Z M26.6,23.3333333 L1.4,23.3333333 C0.626791667,23.3333333 0,23.960125 0,24.7333333 L0,25.6666667 C3.15631751e-17,25.9243995 0.208933783,26.1333333 0.466666667,26.1333333 L27.5333333,26.1333333 C27.7910662,26.1333333 28,25.9243995 28,25.6666667 L28,24.7333333 C28,23.960125 27.3732083,23.3333333 26.6,23.3333333 Z M3.73333333,9.33333333 L3.73333333,20.5333333 L2.56666667,20.5333333 C2.18009167,20.5333333 1.86666667,20.8467583 1.86666667,21.2333333 L1.86666667,22.4 L26.1333333,22.4 L26.1333333,21.2333333 C26.1333333,20.8467583 25.8199083,20.5333333 25.4333333,20.5333333 L24.2666667,20.5333333 L24.2666667,9.33333333 L20.5333333,9.33333333 L20.5333333,20.5333333 L18.6666667,20.5333333 L18.6666667,9.33333333 L14.9333333,9.33333333 L14.9333333,20.5333333 L13.0666667,20.5333333 L13.0666667,9.33333333 L9.33333333,9.33333333 L9.33333333,20.5333333 L7.46666667,20.5333333 L7.46666667,9.33333333 L3.73333333,9.33333333 Z" id="federal-employees-excepted-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="federal-employees-transition">
+        <title>federal-employees-transition</title>
+        <g id="federal-employees-transition-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="federal-employees-transition-federal-employees-career-transition">
+                <g id="federal-employees-transition-Group-2" transform="translate(1.000000, 1.000000)">
+                    <g id="federal-employees-transition-Group" fill="#112E51">
+                        <circle id="federal-employees-transition-Oval-3" cx="22" cy="22" r="22"></circle>
+                    </g>
+                    <g id="federal-employees-transition-exchange-alt" transform="translate(8.000000, 9.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M3.55271368e-15,6.88464302 L3.55271368e-15,5.90133271 C3.55271368e-15,5.08672157 0.587617188,4.42636724 1.3125,4.42636724 L21,4.42636724 L21,1.4764363 C21,0.163286836 22.4163516,-0.492765513 23.2406016,0.433451345 L27.6156016,5.35000291 C28.1281328,5.92603838 28.1281328,6.85993735 27.6156016,7.43591137 L23.2406016,12.3524629 C22.4194688,13.2750538 21,12.6281586 21,11.3095394 L21,8.35960849 L1.3125,8.35960849 C0.587617188,8.35960849 3.55271368e-15,7.69925416 3.55271368e-15,6.88464302 Z M26.6875,16.226091 L7,16.226091 L7,13.2761601 C7,11.9662678 5.58567188,11.3046229 4.75939844,12.2331751 L0.384398438,17.1497267 C-0.128132813,17.7257621 -0.128132813,18.6596611 0.384398438,19.2356351 L4.75939844,24.1521867 C5.58124219,25.0756994 7,24.4267146 7,23.1092632 L7,20.1593322 L26.6875,20.1593322 C27.4123828,20.1593322 28,19.4989779 28,18.6843668 L28,17.7010565 C28,16.8864453 27.4123828,16.226091 26.6875,16.226091 Z" id="federal-employees-transition-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="individuals-with-disabilities">
+        <title>individuals-with-disabilities</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="individuals-with-disabilities-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="individuals-with-disabilities-individuals-with-disabilities">
+                <path d="M45,23 C45,35.1506076 35.1502514,45 22.9992043,45 C10.8497486,45 1,35.1506076 1,23 C1,10.8493924 10.8497486,1 22.9992043,1 C35.1502514,1 45,10.8493924 45,23" id="Fill-1-Copy-2" fill="#205493"></path>
+                <g id="individuals-with-disabilities-wheelchair-alt" transform="translate(11.000000, 7.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M23.5850483,15.0448552 L22.8448552,24.3069517 C22.7609379,25.248331 21.9873931,25.9540966 21.0632276,25.9540966 C21.0126621,25.9540966 20.9620966,25.9540966 20.911531,25.9368828 C19.9195862,25.8691034 19.1966069,24.9955034 19.2643862,24.0207724 L19.8528828,16.809269 L17.4494069,16.9437517 C18.0379034,18.1540966 18.3735724,19.5322759 18.3735724,20.9782345 C18.3735724,23.3989241 17.4321931,25.6012138 15.8861793,27.2311448 L13.5827586,24.9277241 C14.5241379,23.8852138 15.1126345,22.4898207 15.1126345,20.9771586 C15.1126345,17.7162207 12.4735448,15.077131 9.22874483,15.077131 C7.69886897,15.077131 6.32068966,15.6656276 5.26204138,16.6231448 L2.95862069,14.3035862 C4.25288276,13.0760276 5.90002759,12.2357793 7.73329655,11.9334621 L12.1712276,6.88982069 L9.66662069,5.42772414 L6.62408276,8.1345931 C5.88388966,8.8070069 4.75853793,8.73922759 4.10226207,8.00011034 C3.44598621,7.2609931 3.51376552,6.13456552 4.23674483,5.47828966 L8.25401379,1.89782069 C8.82529655,1.37710345 9.66662069,1.29318621 10.3379586,1.69663448 C18.5241931,6.45409655 18.5414069,6.45409655 18.5414069,6.45409655 C18.9782069,6.70584828 19.2310345,7.14372414 19.3483034,7.59666207 C19.5161379,8.25186207 19.398869,8.99205517 18.9115034,9.56333793 L15.4655172,13.4633379 L21.7022897,13.1265931 C22.2230069,13.0932414 22.7275862,13.2782897 23.0976828,13.6645241 C23.4505655,14.0367724 23.6356138,14.5402759 23.5850483,15.0448552 Z M19.7689655,5.98502069 C18.1218207,5.98502069 16.7769931,4.6574069 16.7769931,2.99304828 C16.7769931,1.34590345 18.1218207,0.00107586207 19.7689655,0.00107586207 C21.4333241,0.00107586207 22.7781517,1.34590345 22.7781517,2.99304828 C22.7781517,4.6574069 21.4333241,5.98502069 19.7689655,5.98502069 Z M9.22874483,26.8632 C10.4390897,26.8632 11.582731,26.4769655 12.5241103,25.8379034 L14.8608828,28.1746759 C13.314869,29.4022345 11.3471172,30.1252138 9.22982069,30.1252138 C4.17004138,30.1252138 0.0677793103,26.0229517 0.0677793103,20.9803862 C0.0677793103,18.8458759 0.790758621,16.8953379 2.01831724,15.3321103 L4.35508966,17.6688828 C3.71602759,18.6102621 3.34593103,19.7528276 3.34593103,20.9803862 C3.34593103,24.2251862 5.98502069,26.8642759 9.22982069,26.8642759 L9.22874483,26.8632 Z" id="individuals-with-disabilities-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="internal-to-an-agency">
+        <title>internal-to-an-agency</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="internal-to-an-agency-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="internal-to-an-agency-internal-to-an-agency">
+                <g id="internal-to-an-agency-Group-2" transform="translate(1.000000, 1.000000)">
+                    <g id="internal-to-an-agency-Group" fill="#112E51">
+                        <circle id="internal-to-an-agency-Oval-3" cx="22" cy="22" r="22"></circle>
+                    </g>
+                    <g id="internal-to-an-agency-bullseye" transform="translate(7.000000, 7.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M20,15 C20,17.75375 17.75375,20 15,20 C12.24625,20 10,17.75375 10,15 C10,12.24625 12.24625,10 15,10 C17.75375,10 20,12.24625 20,15 Z M22.5,15 C22.5,10.85875 19.14,7.5 15,7.5 C10.86,7.5 7.5,10.86 7.5,15 C7.5,19.14 10.86,22.5 15,22.5 C19.14,22.5 22.5,19.14 22.5,15 Z M25,15 C25,20.5275 20.5275,25 15,25 C9.4725,25 5,20.5275 5,15 C5,9.4725 9.4725,5 15,5 C20.5275,5 25,9.4725 25,15 Z M27.5,15 C27.5,8.105 21.895,2.5 15,2.5 C8.105,2.5 2.5,8.105 2.5,15 C2.5,21.895 8.105,27.5 15,27.5 C21.895,27.5 27.5,21.895 27.5,15 Z M30,15 C30,23.28125 23.28125,30 15,30 C6.71875,30 0,23.28125 0,15 C0,6.71875 6.71875,0 15,0 C23.28125,0 30,6.71875 30,15 Z" id="internal-to-an-agency-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="land-mgmt">
+        <title>land-mgmt</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="land-mgmt-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="land-mgmt-land-mgmt">
+                <g id="land-mgmt-Group" transform="translate(1.000000, 1.000000)">
+                    <path d="M44,22 C44,34.1506076 34.1502514,44 21.9992043,44 C9.84974862,44 0,34.1506076 0,22 C0,9.84939236 9.84974862,0 21.9992043,0 C34.1502514,0 44,9.84939236 44,22" id="Fill-1-Copy-9" fill="#494440"></path>
+                    <g id="land-mgmt-tree" transform="translate(10.000000, 7.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M24.4791667,23.9583333 C24.4791667,24.528125 24.0072917,25 23.4375,25 L15.9177083,25 C15.9666667,26.0416667 16.096875,27.1322917 16.096875,28.190625 C16.096875,28.728125 15.6572917,29.1677083 15.1041667,29.1677083 L9.89583333,29.1677083 C9.34270833,29.1677083 8.903125,28.728125 8.903125,28.190625 C8.903125,27.1322917 9.03333333,26.0416667 9.08229167,25 L1.5625,25 C0.992708333,25 0.520833333,24.528125 0.520833333,23.9583333 C0.520833333,23.68125 0.634375,23.4208333 0.830208333,23.2260417 L7.37291667,16.6666667 L3.64583333,16.6666667 C3.07604167,16.6666667 2.60416667,16.1947917 2.60416667,15.625 C2.60416667,15.3479167 2.71770833,15.0875 2.91354167,14.8927083 L9.45625,8.33333333 L6.25,8.33333333 C5.68020833,8.33333333 5.20833333,7.86145833 5.20833333,7.29166667 C5.20833333,7.01458333 5.321875,6.75416667 5.51770833,6.559375 L11.7677083,0.309375 C11.9625,0.114583333 12.2239583,0 12.5,0 C12.7760417,0 13.0375,0.113541667 13.2322917,0.309375 L19.4822917,6.559375 C19.6770833,6.75416667 19.7916667,7.015625 19.7916667,7.29166667 C19.7916667,7.86145833 19.3197917,8.33333333 18.75,8.33333333 L15.54375,8.33333333 L22.0864583,14.8927083 C22.28125,15.0875 22.3958333,15.3489583 22.3958333,15.625 C22.3958333,16.1947917 21.9239583,16.6666667 21.3541667,16.6666667 L17.6270833,16.6666667 L24.1697917,23.2260417 C24.3645833,23.4208333 24.4791667,23.6822917 24.4791667,23.9583333 Z" id="land-mgmt-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="military-spouses">
+        <title>military-spouses</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="military-spouses-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="military-spouses-military-spouses">
+                <path d="M46,23 C46,35.1506076 36.1502514,45 23.9992043,45 C11.8497486,45 2,35.1506076 2,23 C2,10.8493924 11.8497486,1 23.9992043,1 C36.1502514,1 46,10.8493924 46,23" id="military-spouses-Fill-1-Copy-4" fill="#2E8540"></path>
+                <g id="military-spouses-Group" transform="translate(9.000000, 11.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <g id="military-spouses-circle-copy" opacity="0.8">
+                        <path d="M9.85714286,0 C4.41186636,0 0,4.41186636 0,9.85714286 C0,15.3024194 4.41186636,19.7142857 9.85714286,19.7142857 C15.3024194,19.7142857 19.7142857,15.3024194 19.7142857,9.85714286 C19.7142857,4.41186636 15.3024194,0 9.85714286,0 Z M9.85714286,17.8064516 C5.46514977,17.8064516 1.9078341,14.2491359 1.9078341,9.85714286 C1.9078341,5.46514977 5.46514977,1.9078341 9.85714286,1.9078341 C14.2491359,1.9078341 17.8064516,5.46514977 17.8064516,9.85714286 C17.8064516,14.2491359 14.2491359,17.8064516 9.85714286,17.8064516 Z" id="military-spouses-Shape1"></path>
+                    </g>
+                    <g id="military-spouses-circle" transform="translate(10.285714, 3.428571)">
+                        <path d="M9.85714286,0 C4.41186636,0 0,4.41186636 0,9.85714286 C0,15.3024194 4.41186636,19.7142857 9.85714286,19.7142857 C15.3024194,19.7142857 19.7142857,15.3024194 19.7142857,9.85714286 C19.7142857,4.41186636 15.3024194,0 9.85714286,0 Z M9.85714286,17.8064516 C5.46514977,17.8064516 1.9078341,14.2491359 1.9078341,9.85714286 C1.9078341,5.46514977 5.46514977,1.9078341 9.85714286,1.9078341 C14.2491359,1.9078341 17.8064516,5.46514977 17.8064516,9.85714286 C17.8064516,14.2491359 14.2491359,17.8064516 9.85714286,17.8064516 Z" id="military-spouses-Shape2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="national-guard">
+        <title>national-guard</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="national-guard-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="national-guard-national-guard">
+                <g id="national-guard-Group-2" transform="translate(1.000000, 1.000000)">
+                    <g id="national-guard-Group" fill="#E31C3D">
+                        <path d="M44,22 C44,34.1506076 34.1502514,44 21.9992043,44 C9.84974862,44 0,34.1506076 0,22 C0,9.84939236 9.84974862,0 21.9992043,0 C34.1502514,0 44,9.84939236 44,22" id="national-guard-Fill-1-Copy-5"></path>
+                    </g>
+                    <g id="national-guard-flag" transform="translate(8.000000, 8.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M18.9758333,5.48792487 C15.9987778,5.48792487 13.5400556,3.55553598 9.79711111,3.55553598 C8.41072222,3.55553598 7.16883333,3.79909154 6.01683333,4.22292487 C6.1764873,3.80596495 6.24443628,3.35950259 6.21605556,2.91392487 C6.11761111,1.33414709 4.82255556,0.0669804277 3.241,0.00264709435 C1.46361111,-0.069686239 0,1.34975821 0,3.11109154 C0,4.16809154 0.527611111,5.10136932 1.33333333,5.66359154 L1.33333333,27.1110915 C1.33333333,27.8474804 1.93027778,28.4444249 2.66666667,28.4444249 L3.55555556,28.4444249 C4.29194444,28.4444249 4.88888889,27.8474804 4.88888889,27.1110915 L4.88888889,21.8666471 C6.46172222,21.1964249 8.42122222,20.6376471 11.2463889,20.6376471 C14.2235,20.6376471 16.6821667,22.570036 20.4251111,22.570036 C23.1011667,22.570036 25.2399444,21.6648138 27.2309444,20.3001471 C27.7133333,19.969536 28,19.4205915 28,18.8358138 L28,5.33025821 C28,4.03064709 26.6517222,3.17081376 25.4730556,3.71825821 C23.5653889,4.60425821 21.2256111,5.48792487 18.9758333,5.48792487 Z" id="national-guard-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="native-americans">
+        <title>native-americans</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="native-americans-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="native-americans-native-americans">
+                <g id="native-americans-Group-2" transform="translate(1.000000, 1.000000)">
+                    <g id="native-americans-Group" fill="#5B616B">
+                        <path d="M44,22 C44,34.1506076 34.1502514,44 21.9992043,44 C9.84974862,44 0,34.1506076 0,22 C0,9.84939236 9.84974862,0 21.9992043,0 C34.1502514,0 44,9.84939236 44,22" id="native-americans-Fill-1-Copy-6"></path>
+                    </g>
+                    <g id="native-americans-sun" transform="translate(7.000000, 6.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M16.1531633,0.774244898 L17.7153673,4.59422449 C17.9733061,5.22489796 18.7360408,5.47273469 19.3154082,5.11414286 L22.824551,2.94195918 C23.7729184,2.35493878 24.9556531,3.21422449 24.6903673,4.29759184 L23.7089388,8.30626531 C23.5468776,8.96810204 24.0183061,9.61695918 24.6978367,9.66734694 L28.8135918,9.97267347 C29.9258571,10.0552041 30.3776327,11.445551 29.5263061,12.166102 L26.3761224,14.8322449 C25.8560204,15.272449 25.8560204,16.0744286 26.3761224,16.5146327 L29.5263673,19.1808367 C30.3777551,19.9013878 29.9259796,21.2917347 28.8136531,21.3742653 L24.697898,21.6795918 C24.0183673,21.7299796 23.5469388,22.3788367 23.709,23.0406735 L24.6904286,27.0493469 C24.9556531,28.1327143 23.7729184,28.992 22.8246122,28.4049796 L19.3154694,26.2327959 C18.736102,25.8741429 17.9733061,26.1219796 17.7154286,26.7527143 L16.1532245,30.5726939 C15.7310204,31.6050612 14.269102,31.6050612 13.846898,30.5726939 L12.2846939,26.7527143 C12.0267551,26.1220408 11.2640204,25.8742041 10.6846531,26.2327959 L7.17544898,28.4049796 C6.22708163,28.992 5.04434694,28.1327143 5.30963265,27.0493469 L6.29106122,23.0406735 C6.45312245,22.3788367 5.98169388,21.7299796 5.30216327,21.6795918 L1.18640816,21.3742653 C0.0741428571,21.2917347 -0.377632653,19.9013878 0.473693878,19.1808367 L3.62387755,16.5146939 C4.14397959,16.0744898 4.14397959,15.2725102 3.62387755,14.8323061 L0.473632653,12.166102 C-0.377755102,11.445551 0.0740204082,10.0552041 1.18634694,9.97267347 L5.30210204,9.66734694 C5.98163265,9.61695918 6.45306122,8.96810204 6.291,8.30626531 L5.30957143,4.29759184 C5.04434694,3.21422449 6.22708163,2.35493878 7.17538776,2.94195918 L10.6845918,5.11414286 C11.2639592,5.47279592 12.0266939,5.22495918 12.2846327,4.59422449 L13.8468367,0.774244898 C14.2690408,-0.258061224 15.7309592,-0.258061224 16.1531633,0.774244898 Z M23.3265306,15.6734694 C23.3265306,11.0821837 19.5912245,7.34693878 15,7.34693878 C10.4087143,7.34693878 6.67346939,11.0821837 6.67346939,15.6734694 C6.67346939,20.2647551 10.4087143,24 15,24 C19.5912245,24 23.3265306,20.2647551 23.3265306,15.6734694 Z M21.3673469,15.6734694 C21.3673469,19.184449 18.5109796,22.0408163 15,22.0408163 C11.4890204,22.0408163 8.63265306,19.184449 8.63265306,15.6734694 C8.63265306,12.1624898 11.4890204,9.30612245 15,9.30612245 C18.5109796,9.30612245 21.3673469,12.1624898 21.3673469,15.6734694 Z" id="native-americans-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="peace-corps">
+        <title>peace-corps</title>
+        <g id="peace-corps-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="peace-corps-peace-corps">
+                <g id="peace-corps-Group-2" transform="translate(1.000000, 1.000000)">
+                    <g id="peace-corps-Group" fill="#4C2C92">
+                        <path d="M44,22 C44,34.1506076 34.1502514,44 21.9992043,44 C9.84974862,44 0,34.1506076 0,22 C0,9.84939236 9.84974862,0 21.9992043,0 C34.1502514,0 44,9.84939236 44,22" id="peace-corps-Fill-1-Copy-7"></path>
+                    </g>
+                    <g id="peace-corps-globe" transform="translate(7.000000, 7.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M21.5452621,11.1290323 L29.4946573,11.1290323 C29.823629,12.3640524 29.9999395,13.661371 29.9999395,15 C29.9999395,16.338629 29.823629,17.6359476 29.4946573,18.8709677 L21.5452621,18.8709677 C21.856996,16.2671976 21.8439919,13.6242339 21.5452621,11.1290323 Z M10.7185887,20.8064516 C11.3644355,24.0532258 12.7250202,27.6117339 14.9600202,29.9995161 C14.9733871,29.9995766 14.9866331,30 15,30 C15.0133669,30 15.0266129,29.9995161 15.0399798,29.9995161 C17.2786089,27.6078024 18.6367742,24.0470565 19.2814113,20.8064516 L10.7185887,20.8064516 Z M21.2506452,9.19354839 L28.8344153,9.19354839 C26.9033468,4.59822581 22.7496774,1.16764113 17.71875,0.246471774 C19.5476613,2.85453629 20.6716331,6.07300403 21.2506452,9.19354839 Z M19.5964113,11.1290323 L10.4035887,11.1290323 C10.0806653,13.6641532 10.0803024,16.3328831 10.4035887,18.8709677 L19.5964718,18.8709677 C19.9193952,16.3357863 19.9197581,13.6671169 19.5964113,11.1290323 Z M8.74935484,20.8064516 L1.16558468,20.8064516 C3.09659274,25.4017742 7.2502621,28.8323589 12.2811895,29.7535282 C10.4517944,27.144496 9.32818548,23.9259073 8.74935484,20.8064516 Z M21.2506452,20.8064516 C20.6715121,23.9277218 19.5472379,27.1460081 17.71875,29.7535282 C22.7496774,28.8323589 26.9033468,25.4017742 28.8343548,20.8064516 L21.2506452,20.8064516 Z M19.2814113,9.19354839 C18.6355645,5.94677419 17.2749194,2.38826613 15.0399798,0.000483870968 C15.0266129,0.000483870968 15.0133669,0 15,0 C14.9866331,0 14.9733871,0.000483870968 14.9600202,0.000483870968 C12.7213911,2.39219758 11.3632258,5.95294355 10.7185887,9.19354839 L19.2814113,9.19354839 Z M0.505342742,11.1290323 C0.176310484,12.3640524 0,13.661371 0,15 C0,16.338629 0.176310484,17.6359476 0.505342742,18.8709677 L8.4547379,18.8709677 C8.15600806,16.3757661 8.14300403,13.7328024 8.4547379,11.1290323 L0.505342742,11.1290323 Z M8.74935484,9.19354839 C9.3284879,6.07245968 10.4526411,2.85423387 12.28125,0.246471774 C7.25032258,1.16764113 3.09665323,4.59822581 1.16558468,9.19354839 L8.74935484,9.19354839 Z" id="peace-corps-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="public">
+        <title>public</title>
+        <g id="public-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="public-public">
+                <g id="public-Group-2" transform="translate(1.000000, 1.000000)">
+                    <g id="public-Group" fill="#02BFE7">
+                        <circle id="Oval-3" cx="22" cy="22" r="22"></circle>
+                    </g>
+                    <g id="public-users" transform="translate(5.000000, 12.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M11.6875,5.3125 C11.6875,2.37845937 14.0660125,0 17,0 C19.9339875,0 22.3125,2.37845937 22.3125,5.3125 C22.3125,8.24654062 19.9339875,10.625 17,10.625 C14.0660125,10.625 11.6875,8.24654062 11.6875,5.3125 Z M2.55,7.65 C2.55,5.30277812 4.45277813,3.4 6.8,3.4 C9.14722187,3.4 11.05,5.30277812 11.05,7.65 C11.05,9.99722187 9.14722187,11.9 6.8,11.9 C4.45277813,11.9 2.55,9.99722187 2.55,7.65 Z M22.95,7.65 C22.95,5.30277812 24.8527781,3.4 27.2,3.4 C29.5472219,3.4 31.45,5.30277812 31.45,7.65 C31.45,9.99722187 29.5472219,11.9 27.2,11.9 C24.8527781,11.9 22.95,9.99722187 22.95,7.65 Z M21.78125,11.6875 C23.8350625,11.6875 25.5,13.3524375 25.5,15.40625 L25.5,19.125 C25.5,19.8291719 24.9291719,20.4 24.225,20.4 L9.775,20.4 C9.07082812,20.4 8.5,19.8291719 8.5,19.125 L8.5,15.40625 C8.5,13.3524375 10.1649375,11.6875 12.21875,11.6875 L13.166925,11.6875 C15.5237625,13.1052469 18.4757063,13.1055656 20.8331281,11.6875 L21.78125,11.6875 Z M6.8,15.40625 C6.8,14.7700781 6.91055312,14.1593 7.11285312,13.5917125 C5.94782187,13.6529125 4.76887188,13.3727844 3.73351875,12.75 L2.975,12.75 C1.33195,12.75 0,14.08195 0,15.725 L0,17.425 C0,18.1291719 0.570828125,18.7 1.275,18.7 L6.8,18.7 L6.8,15.40625 Z M31.025,12.75 L30.2664812,12.75 C29.2308094,13.3729969 28.0519125,13.6529125 26.8871469,13.5917125 C27.0946513,14.174159 27.200477,14.7879444 27.2,15.40625 L27.2,18.7 L32.725,18.7 C33.4291719,18.7 34,18.1291719 34,17.425 L34,15.725 C34,14.08195 32.66805,12.75 31.025,12.75 Z" id="public-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="ses">
+        <title>ses</title>
+        <g id="ses-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="ses-senior-executives">
+                <g id="ses-Group-2" transform="translate(1.000000, 1.000000)">
+                    <g id="ses-Group" fill="#0071BC">
+                        <path d="M44,22 C44,34.1506076 34.1502514,44 21.9992043,44 C9.84974862,44 0,34.1506076 0,22 C0,9.84939236 9.84974862,0 21.9992043,0 C34.1502514,0 44,9.84939236 44,22" id="ses-Fill-1-Copy-8"></path>
+                    </g>
+                    <g id="ses-briefcase" transform="translate(8.000000, 9.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M17.5,14 L28,14 L28,21.875 C28,23.3247656 26.8247656,24.5 25.375,24.5 L2.625,24.5 C1.17523437,24.5 0,23.3247656 0,21.875 L0,14 L10.5,14 L10.5,15.09375 C10.5,15.4561641 10.7938359,15.75 11.15625,15.75 L16.84375,15.75 C17.2061641,15.75 17.5,15.4561641 17.5,15.09375 L17.5,14 Z M28,7.875 L28,12.25 L0,12.25 L0,7.875 C0,6.42523437 1.17523437,5.25 2.625,5.25 L7,5.25 L7,2.625 C7,1.17523437 8.17523438,0 9.625,0 L18.375,0 C19.8247656,0 21,1.17523437 21,2.625 L21,5.25 L25.375,5.25 C26.8247656,5.25 28,6.42523437 28,7.875 Z M17.5,3.5 L10.5,3.5 L10.5,5.25 L17.5,5.25 L17.5,3.5 Z" id="ses-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="se-other">
+        <title>se-other</title>
+        <g id="se-other-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="se-other-senior-executives">
+                <g id="se-other-Group-2" transform="translate(1.000000, 1.000000)">
+                    <g id="se-other-Group" fill="#00BEE6">
+                        <path d="M44,22 C44,34.1506076 34.1502514,44 21.9992043,44 C9.84974862,44 0,34.1506076 0,22 C0,9.84939236 9.84974862,0 21.9992043,0 C34.1502514,0 44,9.84939236 44,22" id="se-other-Fill-1-Copy-8"></path>
+                    </g>
+                    <g id="se-other-briefcase" transform="translate(8.000000, 9.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M17.5,14 L28,14 L28,21.875 C28,23.3247656 26.8247656,24.5 25.375,24.5 L2.625,24.5 C1.17523437,24.5 0,23.3247656 0,21.875 L0,14 L10.5,14 L10.5,15.09375 C10.5,15.4561641 10.7938359,15.75 11.15625,15.75 L16.84375,15.75 C17.2061641,15.75 17.5,15.4561641 17.5,15.09375 L17.5,14 Z M28,7.875 L28,12.25 L0,12.25 L0,7.875 C0,6.42523437 1.17523437,5.25 2.625,5.25 L7,5.25 L7,2.625 C7,1.17523437 8.17523438,0 9.625,0 L18.375,0 C19.8247656,0 21,1.17523437 21,2.625 L21,5.25 L25.375,5.25 C26.8247656,5.25 28,6.42523437 28,7.875 Z M17.5,3.5 L10.5,3.5 L10.5,5.25 L17.5,5.25 L17.5,3.5 Z" id="se-other-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="students">
+        <title>students</title>
+        <g id="students-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="students-students-and-recent-graduates">
+                <g id="students-Group-2" transform="translate(1.000000, 1.000000)">
+                    <g id="students-Group" fill="#FDB81E">
+                        <path d="M44,22 C44,34.1506076 34.1502514,44 21.9992043,44 C9.84974862,44 0,34.1506076 0,22 C0,9.84939236 9.84974862,0 21.9992043,0 C34.1502514,0 44,9.84939236 44,22" id="students-Fill-1-Copy"></path>
+                    </g>
+                    <g id="students-book" transform="translate(10.000000, 8.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M24.5,19.6875 L24.5,1.3125 C24.5,0.58515625 23.9148438,0 23.1875,0 L5.25,0 C2.3515625,0 0,2.3515625 0,5.25 L0,22.75 C0,25.6484375 2.3515625,28 5.25,28 L23.1875,28 C23.9148438,28 24.5,27.4148437 24.5,26.6875 L24.5,25.8125 C24.5,25.4023438 24.3085938,25.0304688 24.0132813,24.7898437 C23.7835938,23.9476563 23.7835938,21.546875 24.0132813,20.7046875 C24.3085938,20.4695312 24.5,20.0976562 24.5,19.6875 Z M7,7.328125 C7,7.14765625 7.14765625,7 7.328125,7 L18.921875,7 C19.1023437,7 19.25,7.14765625 19.25,7.328125 L19.25,8.421875 C19.25,8.60234375 19.1023437,8.75 18.921875,8.75 L7.328125,8.75 C7.14765625,8.75 7,8.60234375 7,8.421875 L7,7.328125 Z M7,10.828125 C7,10.6476562 7.14765625,10.5 7.328125,10.5 L18.921875,10.5 C19.1023437,10.5 19.25,10.6476562 19.25,10.828125 L19.25,11.921875 C19.25,12.1023438 19.1023437,12.25 18.921875,12.25 L7.328125,12.25 C7.14765625,12.25 7,12.1023438 7,11.921875 L7,10.828125 Z M20.8578125,24.5 L5.25,24.5 C4.28203125,24.5 3.5,23.7179688 3.5,22.75 C3.5,21.7875 4.2875,21 5.25,21 L20.8578125,21 C20.7539062,21.9351563 20.7539062,23.5648438 20.8578125,24.5 Z" id="students-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="graduates">
+        <title>graduates</title>
+        <g id="graduates-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="graduates-students-and-recent-graduates">
+                <g id="graduates-Group" transform="translate(1.000000, 1.000000)" fill="#FDB81E">
+                    <path d="M44,22 C44,34.1506076 34.1502514,44 21.9992043,44 C9.84974862,44 0,34.1506076 0,22 C0,9.84939236 9.84974862,0 21.9992043,0 C34.1502514,0 44,9.84939236 44,22" id="Fill-1-Copy"></path>
+                </g>
+                <g id="graduation-cap" transform="translate(6.000000, 13.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M33.092131,7.16095164 L18.4622122,11.6748362 C17.5249022,11.9502838 16.5281399,11.9502838 15.59083,11.6748362 L4.95402808,8.392961 C4.49977535,8.99965679 4.36960998,9.6155819 4.32187207,10.4263307 C4.81505772,10.7232605 5.1450858,11.2637598 5.1450858,11.8814353 C5.1450858,12.5153947 4.79728861,13.0677754 4.28235569,13.3592418 L5.14147894,19.8885148 C5.17489548,20.1423744 4.97704836,20.3681747 4.72074883,20.3681747 L2.17472699,20.3681747 C1.91863963,20.3681747 1.72058034,20.1425866 1.75399688,19.8884618 L2.61312012,13.3591888 C2.09818721,13.0677754 1.75039002,12.5153947 1.75039002,11.8814353 C1.75039002,11.2431264 2.10290796,10.6874041 2.62372855,10.3975289 C2.67395944,9.44536973 2.83451794,8.63488612 3.26829641,7.872883 L0.960858034,7.16095164 C-0.252533541,6.80021217 -0.246698908,5.07952574 0.960858034,4.72048362 L15.5907769,0.206599064 C16.5280868,-0.0688485075 17.5248492,-0.0688485075 18.4621591,0.206599064 L33.092078,4.72048362 C34.3055226,5.08122309 34.299688,6.80190952 33.092131,7.16095164 Z M18.9627176,13.2967051 L18.9517379,13.3000998 L18.9407582,13.3033354 C17.6910401,13.6705875 16.3620551,13.6705875 15.112337,13.3033354 L15.1013573,13.3000998 L15.0903775,13.2967051 L7.08557878,10.8265335 L6.41809672,15.276131 C6.41809672,17.1509579 11.1676474,18.6708268 17.0265211,18.6708268 C22.8853947,18.6708268 27.6349454,17.1509579 27.6349454,15.276131 L26.9675164,10.8265335 L18.9627176,13.2967051 Z" id="graduates-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="veterans">
+        <title>veterans</title>
+        <g id="veterans-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="veterans-veterans">
+                <g id="veterans-Group-2" transform="translate(1.000000, 1.000000)">
+                    <g id="veterans-Group" fill="#2e8540">
+                        <path d="M44,22 C44,34.1506076 34.1502514,44 21.9992043,44 C9.84974862,44 0,34.1506076 0,22 C0,9.84939236 9.84974862,0 21.9992043,0 C34.1502514,0 44,9.84939236 44,22" id="veterans-Fill-1"></path>
+                    </g>
+                    <g id="veterans-shield-alt" transform="translate(8.000000, 7.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M28,7.46666667 C28,20.3747833 20.0705167,27.5709583 15.0768917,29.6513 C14.3876622,29.9384782 13.6122795,29.9384782 12.92305,29.6513 C6.678875,27.049925 0,19.045075 0,7.46666667 C-1.96254898e-06,6.33629013 0.679678559,5.31678086 1.72310833,4.88203333 L12.9231083,0.215366667 C13.6123378,-0.0718115741 14.3877205,-0.0718115741 15.07695,0.215366667 L26.27695,4.88203333 C27.3203569,5.31679896 28.0000118,6.33630429 28,7.46666667 Z M14,26.034925 L14.00385,26.0369083 C19.471725,23.3133833 24.066175,16.9189417 24.2598417,8.08605 L14,3.81109167 L14,26.034925 Z" id="veterans-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="special-authorities">
+        <title>speical authorities</title>
+        <g id="special-authorities-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="special-authorities-special-authorities">
+                <g id="special-authorities-Senior-Executives" transform="translate(1.000000, 1.000000)" fill="#AEB0B5">
+                    <path d="M43.4452857,21.7511724 C43.4452857,33.7643525 33.7197143,43.5023448 21.7218571,43.5023448 C9.72557143,43.5023448 0,33.7643525 0,21.7511724 C0,9.73799234 9.72557143,0 21.7218571,0 C33.7197143,0 43.4452857,9.73799234 43.4452857,21.7511724" id="special-authorities-Fill-1"></path>
+                </g>
+                <g id="special-authorities-asterisk" transform="translate(8.000000, 7.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M29.1620772,21.3250851 L20.0848431,16.3404255 L29.1620772,11.355766 C29.9149495,10.9423404 30.1808644,9.99082979 29.7513538,9.24702128 L28.5079495,7.09334043 C28.0785027,6.34953191 27.1215665,6.10404255 26.3870772,6.54931915 L17.5316516,11.9181702 L17.7534601,1.5647234 C17.7718431,0.706021277 17.0808218,0 16.2218644,0 L13.7350559,0 C12.8761623,0 12.1850772,0.706021277 12.203524,1.5647234 L12.4252686,11.9181702 L3.56984312,6.54938298 C2.83541758,6.10410638 1.87841758,6.34959574 1.44897078,7.09340426 L0.20556652,9.24708511 C-0.223880289,9.99089362 0.0420346051,10.9424043 0.794906945,11.3558298 L9.87207716,16.3404255 L0.794843116,21.3250851 C0.0419707753,21.7385106 -0.223944118,22.6900213 0.20556652,23.4338298 L1.44897078,25.5875106 C1.87841758,26.3313191 2.83541758,26.5768085 3.56984312,26.1315319 L12.4252686,20.7626809 L12.2034601,31.1161277 C12.1850772,31.9748298 12.8761623,32.6808511 13.7350559,32.6808511 L16.2219282,32.6808511 C17.0808218,32.6808511 17.7719069,31.9748298 17.753524,31.1161277 L17.5316516,20.7626809 L26.3870772,26.1314681 C27.1215027,26.5767447 28.0785027,26.3312553 28.5079495,25.5874468 L29.7513538,23.433766 C30.1808006,22.6899574 29.9149495,21.7385106 29.1620772,21.3250851 Z" id="special-authorities-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 46 46" id="federal-employees-land-mgmt">
+        <title>land-mgmt</title>
+        <g id="fed-land-mgmt-fed-land-mgmt-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="fed-land-mgmt-land-mgmt">
+                <g id="fed-land-mgmt-Group" transform="translate(1.000000, 1.000000)">
+                    <path d="M44,22 C44,34.1506076 34.1502514,44 21.9992043,44 C9.84974862,44 0,34.1506076 0,22 C0,9.84939236 9.84974862,0 21.9992043,0 C34.1502514,0 44,9.84939236 44,22" id="fed-land-mgmt-Fill-1-Copy-9" fill="#494440"></path>
+                    <g id="fed-land-mgmt-tree" transform="translate(10.000000, 7.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M24.4791667,23.9583333 C24.4791667,24.528125 24.0072917,25 23.4375,25 L15.9177083,25 C15.9666667,26.0416667 16.096875,27.1322917 16.096875,28.190625 C16.096875,28.728125 15.6572917,29.1677083 15.1041667,29.1677083 L9.89583333,29.1677083 C9.34270833,29.1677083 8.903125,28.728125 8.903125,28.190625 C8.903125,27.1322917 9.03333333,26.0416667 9.08229167,25 L1.5625,25 C0.992708333,25 0.520833333,24.528125 0.520833333,23.9583333 C0.520833333,23.68125 0.634375,23.4208333 0.830208333,23.2260417 L7.37291667,16.6666667 L3.64583333,16.6666667 C3.07604167,16.6666667 2.60416667,16.1947917 2.60416667,15.625 C2.60416667,15.3479167 2.71770833,15.0875 2.91354167,14.8927083 L9.45625,8.33333333 L6.25,8.33333333 C5.68020833,8.33333333 5.20833333,7.86145833 5.20833333,7.29166667 C5.20833333,7.01458333 5.321875,6.75416667 5.51770833,6.559375 L11.7677083,0.309375 C11.9625,0.114583333 12.2239583,0 12.5,0 C12.7760417,0 13.0375,0.113541667 13.2322917,0.309375 L19.4822917,6.559375 C19.6770833,6.75416667 19.7916667,7.015625 19.7916667,7.29166667 C19.7916667,7.86145833 19.3197917,8.33333333 18.75,8.33333333 L15.54375,8.33333333 L22.0864583,14.8927083 C22.28125,15.0875 22.3958333,15.3489583 22.3958333,15.625 C22.3958333,16.1947917 21.9239583,16.6666667 21.3541667,16.6666667 L17.6270833,16.6666667 L24.1697917,23.2260417 C24.3645833,23.4208333 24.4791667,23.6822917 24.4791667,23.9583333 Z" id="fed-land-mgmt-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+</svg>
+
+
+  <footer class="usa-footer usa-footer-big usajobs-footer--v2" role="contentinfo" aria-label="footer" data-object="footer">
+  <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
+    <div class="usa-grid">
+      <div class="usa-footer-logo usa-width-one-half">
+        <span class="logo"></span>
+        <p class="usajobs-footer--v1__note">
+          USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management</a> website.
+        </p>
+      </div>
+      <div class="usa-footer-contact-links usa-width-one-half">
+        <ul class="usa-unstyled-list usajobs-footer--v1__subsection-horizontal">
+          <li><a href="https://www.opm.gov/about-us/budget-performance/">Budget and Performance</a></li>
+          <li><a href="http://www.opm.gov/efoia/">FOIA</a></li>
+          <li><a href="https://www.opm.gov/our-inspector-general/">Inspector General</a></li>
+          <li><a href="https://www.opm.gov/information-management/no-fear-act/">No Fear Act Data</a></li>
+          <li><a href="http://usajobs.github.io/Help/privacy/">Privacy Policy</a></li>
+          <li><a href="http://www.usa.gov/">USA.gov</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="/js/usajobs-design-system-base.js"></script>
+<script src="/js/usajobs-design-system-documentation.js"></script>
+<script src="/js/usajobs-design-system-components.js"></script>
+
+</body>
+
+</html>

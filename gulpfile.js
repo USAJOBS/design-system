@@ -188,6 +188,7 @@ function watch() {
       "pages/*",
       "_data/*",
       "_includes/*",
+      "_includes/components/**/**/*.html",
       "img/*.*",
       "./**/*.md",
       "!_site/**/*.html"
