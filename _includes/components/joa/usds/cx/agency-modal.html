@@ -1,0 +1,44 @@
+<div class="usajobs-modal usajobs-joa-agency-modal" data-object="modal" data-state="is-closed" id="agency-modal" aria-hidden="true" role="dialog" aria-labelledby="agency-modal-heading" aria-describedby="agency-modal-description">
+  <div class="usajobs-modal__dialog">
+    <div class="usajobs-modal__content">
+      <div id="agency-modal-description" class="usajobs-assistive-text">
+        Beginning of a dialog window for the agency announcing this job. It begins with a heading 2 called &quot;Learn more about {{ job.OrganizationName }}&quot;. Escape will cancel and close the window.
+      </div>
+      <div class="usajobs-modal__header">
+        <p class="usajobs-joa-agency-modal__sub-title">
+          Learn more about
+        </p>
+        <h2 id="usajobs-modal-heading" class="usajobs-modal__title">
+          {{ job.OrganizationName }}
+        </h2>
+      </div>
+      <div class="usajobs-modal__body">
+        {% if job.AgencyMarketingStatement %}
+        <p class="usajobs-joa-agency-modal__lead">
+          {{ job.AgencyMarketingStatement }}
+        </p>
+        {% endif %}
+        <div class="usajobs-joa-agency-modal__contact-info">
+          {% include components/joa/usds/doi/agency.html %}
+        </div>
+      </div>
+
+      {% if job.OrganizationURL %}
+      <div class="usajobs-modal__footer usajobs-joa-agency-modal__url">
+        <h3>Visit our careers page</h3>
+        <p>
+          Learn more about what it's like to work at {{ job.OrganizationName }}, what the agency does, and about the types of careers this agency offers.
+        </p>
+        <p>
+          <a href="{{ job.OrganizationURL }}">{{ job.OrganizationURL }}</a>
+        </p>
+      </div>
+      {% endif %}
+      <div class="usajobs-modal__actions">
+        <button class="usajobs-modal__close" data-behavior="modal.close">
+          <span class="usajobs-assistive-text">Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+---
+permalink: /job-announcement/v7.0/cx/
+layout: joa-pilot
+title: Gov-wide CX hiring action
+control-number: "gov-wide"
+---
+
+{% assign job = site.data.job-announcements[page.control-number] %}
+{% include components/nav/v2/unauth.html %}
+{% include components/joa/v1.2/prev-next.html %}
+<div xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hr="http://www.hr-xml.org/3" xmlns:oa="http://www.openapplications.org/oagis/9">
+  <div itemscope="" itemtype="http://schema.org/JobPosting">
+    {% include components/joa/usds/cx/banner.html %}
+    {% include components/joa/usds/cx/nav.html %}
+    <section class="usajobs-shell usajobs-joa-pilot__shell">
+      <div class="usajobs-content-gutter">
+        {% include components/joa/usds/cx/intro.html %}
+        <main class="usajobs-content-well usajobs-joa-pilot__content-well" id="main-content" role="main" aria-label="Main Job announcement content">
+          {% include components/joa/usds/cx/responsiblities.html %}
+          {% include components/joa/usds/cx/qualifications.html %}
+          {% include components/joa/usds/cx/where-you-will-work.html %}
+          {% include components/joa/usds/cx/how-you-will-be-evaluated.html %}
+          {% include components/joa/usds/cx/required-documents.html %}
+          {% include components/joa/usds/cx/actions.html variation="wide" %}
+          {% include components/joa/usds/cx/numbers.html variation="wide" %}
+          {% include components/joa/usds/cx/fair-and-transparent.html %}
+          <p class="usajobs-joa__authenticity-note">
+            This job originated on <a href="https://www.usajobs.gov/">www.usajobs.gov</a>. For the full announcement and to apply, visit <a href="https://www.usajobs.gov/GetJob/ViewDetails/{{ page.control-number }}">www.usajobs.gov/GetJob/ViewDetails/{{ page.control-number }}</a>.
+            Only resumes submitted according to the instructions on the job announcement listed at <a href="https://www.usajobs.gov/">www.usajobs.gov</a> will be considered.
+          </p>
+        </main>
+      </div>
+    </section>
+  </div>
+</div>
+{% include components/joa/usds/cx/agency-modal.html %}
+{% include components/joa/usds/cx/evaluation-modal.html %}
+{% include icons/hiring-paths.svg %}

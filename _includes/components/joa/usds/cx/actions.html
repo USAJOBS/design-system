@@ -1,0 +1,52 @@
+<div class="usajobs-joa-actions--pilot is-{{ include.variation }}" data-object="joa-actions">
+  <div class="usajobs-joa-actions--pilot__body">
+    <div class="usajobs-joa-actions--pilot__col-apply">
+      <a href="#" class="usa-button-primary usajobs-joa-actions--pilot__apply">Apply</a>
+    </div>
+    <div class="usajobs-joa-actions--pilot__col-sub-actions">
+      <a class="usajobs-joa-actions--pilot__print" href="#print">
+        <i class="fa fa-print"></i> Print
+      </a>
+      <div class="usajobs-joa-actions--pilot__share usajobs-joa-actions-share">
+        <button class="usajobs-joa-actions-share__trigger" id="joa-share" href="#share" data-behavior="joa-actions.toggle-share" aria-haspopup="true">
+          <i class="fas fa-share-alt"></i> Share
+        </button>
+        <ul class="usajobs-joa-actions-share__list" id="joa-share-menu" aria-hidden="true" aria-labeledby="joa-share">
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="mailto:?subject=USAJOBS Job Announcement - [job title]&amp;body=Read more about [job title ] at https://www.usajobs.gov/GetJob/ViewDetails/{{ page.control-number }}" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link email"
+              data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fas fa-envelope-square"></i> <span class="sr-only">Email</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2F{{ page.control-number }}%2F%3Fshare%3Dfacebook&amp;t=USAJOBS%20-%20Job%20Announcement" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link facebook"
+              target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fab fa-facebook-square"></i> <span class="sr-only">Facebook</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2F{{page.control-number}}%2F%3Fshare%3Dlinkedin&amp;title=USAJOBS%20-%20Job%20Announcement&amp;ro=false&amp;summary=&amp;source="
+              class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link linkedin" target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fab fa-linkedin"></i> <span class="sr-only">LinkedIn</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="https://twitter.com/intent/tweet?text=USAJOBS%20-%20Job%20Announcement%20https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2F{{page.control-number}}%2F%3Fshare%3Dtwitter&amp;source=webclient" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link twitter"
+              target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fab fa-twitter-square"></i> <span class="sr-only">Twitter</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="#joa-share-menu" data-shorten-url="https://www.usajobs.gov/GetJob/ViewDetails/{{page.control-number}}" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link link" data-behavior="joa-actions.shorten-link"
+              data-target="#joa-share-menu">
+              <i class="fas fa-link"></i> <span class="sr-only">Shorten link</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="usajobs-joa-actions--pilot__save" href="#save" data-behavior="joa-actions.toggle-save" data-state="is-unsaved">
+        Save
+      </a>
+    </div>
+  </div>
+</div>
