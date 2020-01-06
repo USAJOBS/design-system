@@ -19,11 +19,13 @@
               Learn more about federal benefits
             </a>
           </li>
+          {% if job.UserArea.Details.BenefitsURL != '' %}
           <li>
             <a href="{{ job.UserArea.Details.BenefitsURL }}" target="_blank">
               Learn more about benefits at the {{ job.OrganizationName }}
             </a>
           </li>
+          {% endif %}
         </ul>
     </li>
     <li>
