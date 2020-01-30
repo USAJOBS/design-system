@@ -41,9 +41,13 @@ $ rbenv global
 
 ### Installation
 
-Now that you have verified that you have Ruby and Node installed, run the following commands to install the packages that the design system depends upon:
+Now that you have verified that you have Ruby and Node installed, run the following commands to clone the USA Jobs repo and install the packages that the design system depends upon:
+
+Note: some of the following npm commands may require ```shell sudo```
 
 ```shell
+$ git clone https://github.com/USAJOBS/design-system.git
+$ cd cd openopps-help
 $ bundle install
 $ npm install -g gulp
 $ npm install -g gulp-cli
