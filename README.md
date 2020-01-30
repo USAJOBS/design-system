@@ -43,7 +43,7 @@ $ rbenv global
 
 Now that you have verified that you have Ruby and Node installed, run the following commands to clone the USA Jobs repo and install the packages that the design system depends upon:
 
-Note: some of the following npm commands may require ```shell sudo```
+Note: some of the following npm commands may require ```sudo```
 
 ```shell
 $ git clone https://github.com/USAJOBS/design-system.git
