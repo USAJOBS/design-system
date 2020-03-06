@@ -2,7 +2,7 @@
 
 This repository houses the design system for the next generation of USAJOBS. A design system describes the base visual language, using UI elements and style guidelines, upon which the site can be built. It will also include examples and usage guidelines of new components.
 
-The USAJOBS design system starts with the The [U.S. Web Design Standards](https://playbook.cio.gov/designstandards) and extends them to meet the needs of the USAJOBS next generation project. This repo allows the team working on USAJOBS to:
+The USAJOBS design system starts with the The [U.S. Web Design System](https://designsystem.digital.gov/) and extends them to meet the needs of the USAJOBS next generation project. This repo allows the team working on USAJOBS to:
 
 1. Document where we have intentionally deviated from an existing guildeline in the U.S. Web Design Standards and provide a platform for contributing back to those standards.
 
