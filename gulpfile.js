@@ -100,8 +100,8 @@ var paths = {
   }
 };
 
+/*
 var options = {
-  autoprefixer: ["> 1%", "Last 2 versions", "IE 11"],
   browserify: {
     entries: paths.scripts.entryPoint,
     external: ["jquery"],
@@ -109,6 +109,7 @@ var options = {
     debug: true
   }
 };
+*/
 
 function jekyllBuild() {
   browserSync.notify(messages.jekyllBuild);
@@ -133,11 +134,9 @@ function jekyllBuild() {
 
 function cssBuild() {
   const processors = [
-    prefix({ browsers: options.autoprefixer }),
-    // We can't re-order our media-queries the way we are currently writing them
-    //    packCSS({ sort: false }),
-    csswring,
-    cssnano({ autoprefixer: { browsers: options.autoprefixer } })
+    prefix(),
+    csswring(),
+    cssnano()
   ];
 
   return gulp
