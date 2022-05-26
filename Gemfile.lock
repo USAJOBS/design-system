@@ -247,7 +247,7 @@ GEM
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     unicode-display_width (1.6.0)
-    yajl-ruby (1.4.1)
+    yajl-ruby (1.4.3)
     yell (2.2.0)
     zeitwerk (2.2.2)
 
